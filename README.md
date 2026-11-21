@@ -199,17 +199,3 @@ El endpoint `GET /health` verifica la conexión con PostgreSQL, MongoDB y Redis:
 ./scripts/backup.sh                              # crea backups/<fecha_hora>/
 ./scripts/restore.sh backups/20260101_120000     # restaura (pide confirmación)
 ```
-
-## Autores
-
-- **Andrés Felipe Ruiz Vasallo**
-- **Catalina Ariza Ardila**
-- **Alejandro Nuñez Barrera**
-
-**Docente:** Lilia Marcela Espinosa Rodríguez
-
----
-
-<div align="center">
-Universidad Distrital Francisco José de Caldas · Ingeniería de Sistemas · Bases de Datos NoSQL
-</div>
