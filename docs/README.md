@@ -1,4 +1,4 @@
-# 📚 docs/
+# docs/
 
 Documentación académica y técnica del proyecto.
 

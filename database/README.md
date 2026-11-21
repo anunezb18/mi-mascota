@@ -1,4 +1,4 @@
-# 🗄️ database/
+# database/
 
 Scripts de inicialización de las tres bases de datos de MiMascota.
 

@@ -1,4 +1,4 @@
-# 🎨 frontend/
+# frontend/
 
 Interfaz web de MiMascota con **React 18 + Vite**.
 

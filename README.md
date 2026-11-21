@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐾 MiMascota
+# MiMascota
 
 **Plataforma web de adopción de mascotas que conecta fundaciones con adoptantes, con persistencia políglota.**
 
@@ -19,50 +19,50 @@
 
 ---
 
-## 📖 Descripción
+## Descripción
 
 MiMascota permite a las **fundaciones** publicar perfiles de mascotas en adopción y a los **adoptantes** buscarlas por especie y cercanía, enviar solicitudes y seguir su estado. El proyecto aplica **persistencia políglota**: cada tipo de dato se guarda en el motor que mejor se ajusta a él.
 
-## 🗃️ Rol de cada base de datos
+## Rol de cada base de datos
 
 | Base de datos | Qué almacena | Por qué |
 |---|---|---|
-| 🍃 **MongoDB** (replica set de 3 nodos) | Perfiles de mascotas | Estructura variable según la especie, historial médico como documentos anidados y búsqueda geoespacial con índice `2dsphere`. Validación con `$jsonSchema`. |
-| 🐘 **PostgreSQL** | Usuarios, fundaciones, solicitudes y adopciones | Integridad referencial (llaves foráneas, `CHECK`, índices únicos) y transacciones ACID al aprobar una adopción. |
-| 🔴 **Redis** | Caché de búsquedas y notificaciones | Respuesta rápida a búsquedas repetidas (patrón *cache-aside* con TTL) y notificaciones en tiempo real con Pub/Sub. |
+| **MongoDB** (replica set de 3 nodos) | Perfiles de mascotas | Estructura variable según la especie, historial médico como documentos anidados y búsqueda geoespacial con índice `2dsphere`. Validación con `$jsonSchema`. |
+| **PostgreSQL** | Usuarios, fundaciones, solicitudes y adopciones | Integridad referencial (llaves foráneas, `CHECK`, índices únicos) y transacciones ACID al aprobar una adopción. |
+| **Redis** | Caché de búsquedas y notificaciones | Respuesta rápida a búsquedas repetidas (patrón *cache-aside* con TTL) y notificaciones en tiempo real con Pub/Sub. |
 
-## ✨ Funcionalidades principales
+## Funcionalidades principales
 
-- 🔐 Registro e inicio de sesión con **JWT** y tres roles: adoptante, fundación y administrador.
-- 🏠 Gestión del perfil de cada fundación.
-- 🐶 Registro de mascotas con atributos propios de cada especie e **historial médico**.
-- 📍 **Búsqueda por cercanía** según la ubicación del adoptante, con filtros por especie y estado.
-- 📝 **Solicitudes de adopción**: el adoptante las envía y la fundación las aprueba o rechaza.
-- 🔔 **Notificaciones** a los usuarios cuando cambia el estado de una solicitud.
-- ⚡ **Caché** de los resultados de búsqueda.
-- 💾 **Respaldo y restauración** de las bases de datos.
+- Registro e inicio de sesión con **JWT** y tres roles: adoptante, fundación y administrador.
+- Gestión del perfil de cada fundación.
+- Registro de mascotas con atributos propios de cada especie e **historial médico**.
+- **Búsqueda por cercanía** según la ubicación del adoptante, con filtros por especie y estado.
+- **Solicitudes de adopción**: el adoptante las envía y la fundación las aprueba o rechaza.
+- **Notificaciones** a los usuarios cuando cambia el estado de una solicitud.
+- **Caché** de los resultados de búsqueda.
+- **Respaldo y restauración** de las bases de datos.
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 ```mermaid
 flowchart LR
-    U["👤 Usuarios<br/>adoptante · fundación · admin"] -->|HTTP| FE["🎨 Frontend<br/>React + Vite"]
-    FE -->|"REST + JWT"| API["⚙️ Backend<br/>FastAPI"]
+    U["Usuarios<br/>adoptante · fundación · admin"] -->|HTTP| FE["Frontend<br/>React + Vite"]
+    FE -->|"REST + JWT"| API["Backend<br/>FastAPI"]
 
-    API -->|"SQLAlchemy async"| PG[("🐘 PostgreSQL<br/>usuarios · fundaciones<br/>solicitudes · adopciones")]
+    API -->|"SQLAlchemy async"| PG[("PostgreSQL<br/>usuarios · fundaciones<br/>solicitudes · adopciones")]
     API -->|Motor| M1
-    API -->|redis.asyncio| R[("🔴 Redis<br/>caché · Pub/Sub")]
+    API -->|redis.asyncio| R[("Redis<br/>caché · Pub/Sub")]
 
-    subgraph RS["🍃 MongoDB Replica Set (rs0)"]
+    subgraph RS["MongoDB Replica Set (rs0)"]
         M1[("mongo1<br/>PRIMARY")] <--> M2[("mongo2<br/>SECONDARY")]
         M1 <--> M3[("mongo3<br/>SECONDARY")]
     end
 
-    B["💾 scripts/backup.sh"] -.->|pg_dump| PG
+    B["scripts/backup.sh"] -.->|pg_dump| PG
     B -.->|mongodump| RS
 ```
 
-## 📂 Estructura del repositorio
+## Estructura del repositorio
 
 ```
 mi-mascota/
@@ -96,7 +96,7 @@ mi-mascota/
 └── README.md
 ```
 
-## 🚀 Instalación y ejecución
+## Instalación y ejecución
 
 ### Requisitos
 
@@ -170,7 +170,7 @@ pytest
 
 El frontend también puede correrse en local con `cd frontend && npm install && npm run dev`.
 
-## 📑 Documentación de la API
+## Documentación de la API
 
 FastAPI genera la documentación automáticamente a partir del código:
 
@@ -180,7 +180,7 @@ FastAPI genera la documentación automáticamente a partir del código:
 
 El endpoint `GET /health` verifica la conexión con PostgreSQL, MongoDB y Redis: responde `200` si las tres responden y `503` si alguna falla.
 
-## 🛡️ Seguridad y gestión
+## Seguridad y gestión
 
 | Aspecto | Implementación |
 |---|---|
@@ -200,7 +200,7 @@ El endpoint `GET /health` verifica la conexión con PostgreSQL, MongoDB y Redis:
 ./scripts/restore.sh backups/20260101_120000     # restaura (pide confirmación)
 ```
 
-## 👥 Autores
+## Autores
 
 - **Andrés Felipe Ruiz Vasallo**
 - **Catalina Ariza Ardila**

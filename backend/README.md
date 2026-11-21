@@ -1,4 +1,4 @@
-# ⚙️ backend/
+# backend/
 
 API REST de MiMascota con **FastAPI** (Python 3.12). Se conecta a PostgreSQL, MongoDB y Redis.
 
