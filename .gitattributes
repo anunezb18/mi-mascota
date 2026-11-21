@@ -1,0 +1,8 @@
+# Normaliza finales de línea. Los scripts que se ejecutan dentro de
+# contenedores Linux DEBEN usar LF, aunque se clonen en Windows.
+* text=auto
+*.sh text eol=lf
+*.js text eol=lf
+*.sql text eol=lf
+*.conf text eol=lf
+Dockerfile text eol=lf
