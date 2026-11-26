@@ -1,0 +1,71 @@
+{
+  "geoPunto": {
+    "bsonType": "object",
+    "description": "Punto GeoJSON. coordinates = [longitud, latitud], formato exigido por el índice 2dsphere.",
+    "required": ["type", "coordinates"],
+    "additionalProperties": false,
+    "properties": {
+      "type": { "enum": ["Point"] },
+      "coordinates": {
+        "bsonType": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": [
+          { "bsonType": "number", "minimum": -180, "maximum": 180, "description": "Longitud" },
+          { "bsonType": "number", "minimum": -90, "maximum": 90, "description": "Latitud" }
+        ]
+      }
+    }
+  },
+  "perfilEstiloVida": {
+    "bsonType": "object",
+    "description": "Subdocumento embebido del adoptante. Alimenta el cálculo de compatibilidad.",
+    "required": [
+      "tipo_vivienda",
+      "tiene_patio",
+      "horas_disponibles",
+      "tiene_ninos",
+      "tiene_otras_mascotas",
+      "otras_mascotas",
+      "experiencia_previa",
+      "especies_preferidas",
+      "tamanos_preferidos"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "tipo_vivienda": { "enum": ["apartamento", "casa", "finca"] },
+      "tiene_patio": { "bsonType": "bool" },
+      "horas_disponibles": { "bsonType": "number", "minimum": 0, "maximum": 24 },
+      "tiene_ninos": { "bsonType": "bool" },
+      "tiene_otras_mascotas": { "bsonType": "bool" },
+      "otras_mascotas": {
+        "bsonType": "array",
+        "uniqueItems": true,
+        "items": { "enum": ["perro", "gato", "conejo"] }
+      },
+      "experiencia_previa": { "bsonType": "bool" },
+      "especies_preferidas": {
+        "bsonType": "array",
+        "uniqueItems": true,
+        "items": { "enum": ["perro", "gato", "conejo"] }
+      },
+      "tamanos_preferidos": {
+        "bsonType": "array",
+        "uniqueItems": true,
+        "items": { "enum": ["pequeno", "mediano", "grande"] }
+      },
+      "actualizado_en": { "bsonType": "date" }
+    }
+  },
+  "correo": {
+    "bsonType": "string",
+    "maxLength": 254,
+    "pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+    "description": "Se guarda en minúsculas."
+  },
+  "telefono": {
+    "bsonType": "string",
+    "pattern": "^(3\\d{9}|60\\d{8})$",
+    "description": "Celular colombiano (3XXXXXXXXX) o fijo con indicativo (60XXXXXXXX)."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "title": "solicitudes",
+    "description": "Solicitudes de adopción. Guardan copias resumidas (patrón de subconjunto) y su historial de estados embebido.",
+    "required": [
+      "mascota_id",
+      "adoptante_id",
+      "fundacion_id",
+      "estado",
+      "mensaje",
+      "mascota",
+      "fundacion",
+      "adoptante",
+      "historial_estados",
+      "fecha_creacion",
+      "fecha_actualizacion"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "mascota_id": { "bsonType": "objectId" },
+      "adoptante_id": { "bsonType": "objectId" },
+      "fundacion_id": { "bsonType": "objectId" },
+      "estado": { "enum": ["pendiente", "aprobada", "rechazada"] },
+      "mensaje": { "bsonType": "string", "minLength": 20, "maxLength": 1000 },
+      "mascota": {
+        "bsonType": "object",
+        "required": ["nombre", "especie"],
+        "additionalProperties": false,
+        "properties": {
+          "nombre": { "bsonType": "string" },
+          "especie": { "enum": ["perro", "gato", "conejo"] },
+          "foto": { "bsonType": "string" }
+        }
+      },
+      "fundacion": {
+        "bsonType": "object",
+        "required": ["nombre"],
+        "additionalProperties": false,
+        "properties": { "nombre": { "bsonType": "string" } }
+      },
+      "adoptante": {
+        "bsonType": "object",
+        "description": "Datos del adoptante al momento de enviar la solicitud, para que la fundación los revise sin consultar usuarios.",
+        "required": ["nombre", "correo"],
+        "additionalProperties": false,
+        "properties": {
+          "nombre": { "bsonType": "string" },
+          "correo": { "bsonType": "string" },
+          "telefono": { "bsonType": "string" },
+          "ciudad": { "bsonType": "string" },
+          "perfil_estilo_vida": { "$incluir": "perfilEstiloVida" }
+        }
+      },
+      "historial_estados": {
+        "bsonType": "array",
+        "minItems": 1,
+        "items": {
+          "bsonType": "object",
+          "required": ["estado", "fecha"],
+          "additionalProperties": false,
+          "properties": {
+            "estado": { "enum": ["pendiente", "aprobada", "rechazada"] },
+            "fecha": { "bsonType": "date" },
+            "nota": { "bsonType": "string", "maxLength": 500 }
+          }
+        }
+      },
+      "fecha_creacion": { "bsonType": "date" },
+      "fecha_actualizacion": { "bsonType": "date" }
+    }
+  }
+}

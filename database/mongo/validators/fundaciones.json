@@ -1,0 +1,60 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "title": "fundaciones",
+    "description": "Fundaciones registradas. Solo las aprobadas por el administrador pueden publicar mascotas.",
+    "required": [
+      "usuario_id",
+      "nombre",
+      "nit",
+      "descripcion",
+      "direccion",
+      "ciudad",
+      "telefono",
+      "correo",
+      "estado_validacion",
+      "fecha_registro"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "usuario_id": { "bsonType": "objectId", "description": "Cuenta que registró la fundación (usuarios._id)." },
+      "nombre": { "bsonType": "string", "minLength": 3, "maxLength": 150 },
+      "nit": {
+        "bsonType": "string",
+        "pattern": "^\\d{3}\\.\\d{3}\\.\\d{3}-\\d$",
+        "description": "NIT con dígito de verificación, normalizado como 900.123.456-7."
+      },
+      "descripcion": { "bsonType": "string", "minLength": 20, "maxLength": 1000 },
+      "direccion": { "bsonType": "string", "minLength": 5, "maxLength": 200 },
+      "ciudad": { "bsonType": "string", "minLength": 2, "maxLength": 80 },
+      "localidad": { "bsonType": "string", "maxLength": 80 },
+      "telefono": { "$incluir": "telefono" },
+      "correo": { "$incluir": "correo" },
+      "sitio_web": { "bsonType": "string", "pattern": "^https?://" },
+      "ubicacion": { "$incluir": "geoPunto" },
+      "estado_validacion": { "enum": ["pendiente", "aprobada", "rechazada"] },
+      "motivo_rechazo": { "bsonType": "string", "minLength": 10, "maxLength": 500 },
+      "fecha_registro": { "bsonType": "date" },
+      "fecha_validacion": { "bsonType": "date" }
+    },
+    "oneOf": [
+      {
+        "description": "Pendiente: aún sin resultado de validación.",
+        "properties": { "estado_validacion": { "enum": ["pendiente"] } },
+        "not": { "anyOf": [{ "required": ["fecha_validacion"] }, { "required": ["motivo_rechazo"] }] }
+      },
+      {
+        "description": "Aprobada: con fecha de validación y sin motivo de rechazo.",
+        "properties": { "estado_validacion": { "enum": ["aprobada"] } },
+        "required": ["fecha_validacion"],
+        "not": { "required": ["motivo_rechazo"] }
+      },
+      {
+        "description": "Rechazada: exige la fecha y el motivo.",
+        "properties": { "estado_validacion": { "enum": ["rechazada"] } },
+        "required": ["fecha_validacion", "motivo_rechazo"]
+      }
+    ]
+  }
+}

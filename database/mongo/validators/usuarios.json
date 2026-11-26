@@ -1,0 +1,41 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "title": "usuarios",
+    "description": "Cuentas de adoptantes, fundaciones y administradores. El borrado es lógico (activo = false).",
+    "required": ["nombre", "correo", "contrasena_hash", "rol", "activo", "fecha_registro"],
+    "additionalProperties": false,
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "nombre": { "bsonType": "string", "minLength": 3, "maxLength": 120 },
+      "correo": { "$incluir": "correo" },
+      "contrasena_hash": { "bsonType": "string", "minLength": 20, "description": "Hash bcrypt; nunca la contraseña en claro." },
+      "telefono": { "$incluir": "telefono" },
+      "rol": { "enum": ["adoptante", "fundacion", "administrador"] },
+      "activo": { "bsonType": "bool" },
+      "ciudad": { "bsonType": "string", "minLength": 1, "maxLength": 80 },
+      "ubicacion": { "$incluir": "geoPunto" },
+      "perfil_estilo_vida": { "$incluir": "perfilEstiloVida" },
+      "fundacion_id": { "bsonType": "objectId", "description": "Referencia a fundaciones._id (solo rol fundacion)." },
+      "fecha_registro": { "bsonType": "date" }
+    },
+    "oneOf": [
+      {
+        "description": "Adoptante: puede tener perfil de estilo de vida; nunca fundación.",
+        "properties": { "rol": { "enum": ["adoptante"] } },
+        "not": { "required": ["fundacion_id"] }
+      },
+      {
+        "description": "Fundación: siempre enlazada a su documento en fundaciones.",
+        "properties": { "rol": { "enum": ["fundacion"] } },
+        "required": ["fundacion_id"],
+        "not": { "required": ["perfil_estilo_vida"] }
+      },
+      {
+        "description": "Administrador: sin perfil ni fundación.",
+        "properties": { "rol": { "enum": ["administrador"] } },
+        "not": { "anyOf": [{ "required": ["fundacion_id"] }, { "required": ["perfil_estilo_vida"] }] }
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "usuarios": [
+    {
+      "clave": { "correo": 1 },
+      "opciones": { "name": "correo_unico", "unique": true },
+      "uso": "Inicio de sesión y registro sin correos duplicados."
+    },
+    {
+      "clave": { "rol": 1, "activo": 1, "fecha_registro": -1 },
+      "opciones": { "name": "rol_activo_registro" },
+      "uso": "Listado del administrador filtrado por rol y estado."
+    },
+    {
+      "clave": { "fundacion_id": 1 },
+      "opciones": { "name": "fundacion_unica", "unique": true, "partialFilterExpression": { "fundacion_id": { "$exists": true } } },
+      "uso": "Una cuenta por fundación; localiza la cuenta a notificar."
+    }
+  ],
+  "fundaciones": [
+    {
+      "clave": { "usuario_id": 1 },
+      "opciones": { "name": "usuario_unico", "unique": true },
+      "uso": "Fundación de la cuenta autenticada (GET /fundaciones/me)."
+    },
+    {
+      "clave": { "nit": 1 },
+      "opciones": { "name": "nit_unico", "unique": true },
+      "uso": "Un NIT no puede registrarse dos veces."
+    },
+    {
+      "clave": { "estado_validacion": 1, "fecha_registro": -1 },
+      "opciones": { "name": "estado_registro" },
+      "uso": "Bandeja de validación del administrador."
+    },
+    {
+      "clave": { "ubicacion": "2dsphere" },
+      "opciones": { "name": "ubicacion_2dsphere" },
+      "uso": "Ubicación de la sede (consultas geoespaciales)."
+    }
+  ],
+  "mascotas": [
+    {
+      "clave": { "ubicacion": "2dsphere" },
+      "opciones": { "name": "ubicacion_2dsphere" },
+      "uso": "Búsqueda por cercanía con $geoNear."
+    },
+    {
+      "clave": { "estado": 1, "especie": 1, "tamano": 1, "fecha_publicacion": -1 },
+      "opciones": { "name": "catalogo" },
+      "uso": "Catálogo público filtrado y ordenado por publicación."
+    },
+    {
+      "clave": { "temperamento": 1 },
+      "opciones": { "name": "temperamento_multikey" },
+      "uso": "Filtro por temperamento ($all) sobre el arreglo."
+    },
+    {
+      "clave": { "fundacion_id": 1, "estado": 1, "fecha_publicacion": -1 },
+      "opciones": { "name": "fundacion_estado" },
+      "uso": "Gestión e indicadores de cada fundación."
+    }
+  ],
+  "solicitudes": [
+    {
+      "clave": { "mascota_id": 1, "adoptante_id": 1 },
+      "opciones": {
+        "name": "pendiente_unica_por_adoptante",
+        "unique": true,
+        "partialFilterExpression": { "estado": "pendiente" }
+      },
+      "uso": "Un adoptante no puede tener dos solicitudes pendientes para la misma mascota."
+    },
+    {
+      "clave": { "mascota_id": 1, "estado": 1 },
+      "opciones": { "name": "mascota_estado" },
+      "uso": "Rechazo automático de las demás pendientes al aprobar."
+    },
+    {
+      "clave": { "fundacion_id": 1, "estado": 1, "fecha_actualizacion": -1 },
+      "opciones": { "name": "bandeja_fundacion" },
+      "uso": "Bandeja de solicitudes de la fundación."
+    },
+    {
+      "clave": { "adoptante_id": 1, "fecha_actualizacion": -1 },
+      "opciones": { "name": "solicitudes_adoptante" },
+      "uso": "Mis solicitudes del adoptante."
+    }
+  ],
+  "notificaciones": [
+    {
+      "clave": { "usuario_id": 1, "fecha": -1 },
+      "opciones": { "name": "historial_usuario" },
+      "uso": "Historial de notificaciones de cada usuario."
+    },
+    {
+      "clave": { "usuario_id": 1, "leida": 1 },
+      "opciones": { "name": "no_leidas" },
+      "uso": "Contador de la campana y marcar todas como leídas."
+    }
+  ]
+}

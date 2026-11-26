@@ -1,0 +1,28 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "title": "notificaciones",
+    "description": "Avisos por usuario. Cada inserción se emite en tiempo real mediante un change stream.",
+    "required": ["usuario_id", "tipo", "titulo", "mensaje", "leida", "fecha"],
+    "additionalProperties": false,
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "usuario_id": { "bsonType": "objectId" },
+      "tipo": {
+        "enum": [
+          "solicitud_recibida",
+          "solicitud_aprobada",
+          "solicitud_rechazada",
+          "fundacion_pendiente",
+          "fundacion_aprobada",
+          "fundacion_rechazada"
+        ]
+      },
+      "titulo": { "bsonType": "string", "minLength": 1, "maxLength": 120 },
+      "mensaje": { "bsonType": "string", "minLength": 1, "maxLength": 500 },
+      "leida": { "bsonType": "bool" },
+      "enlace": { "bsonType": "string", "pattern": "^/", "description": "Ruta interna del frontend." },
+      "fecha": { "bsonType": "date" }
+    }
+  }
+}

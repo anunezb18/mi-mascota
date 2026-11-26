@@ -1,0 +1,140 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "title": "mascotas",
+    "description": "Mascotas publicadas. Atributos polimórficos por especie, historial médico embebido y resumen desnormalizado de la fundación.",
+    "required": [
+      "nombre",
+      "especie",
+      "raza",
+      "sexo",
+      "edad_meses",
+      "tamano",
+      "descripcion",
+      "temperamento",
+      "fotos",
+      "estado",
+      "atributos_especie",
+      "historial_medico",
+      "esterilizado",
+      "fundacion_id",
+      "fundacion",
+      "ubicacion",
+      "fecha_publicacion"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "_id": { "bsonType": "objectId" },
+      "nombre": { "bsonType": "string", "minLength": 2, "maxLength": 60 },
+      "especie": { "enum": ["perro", "gato", "conejo"] },
+      "raza": { "bsonType": "string", "minLength": 2, "maxLength": 80 },
+      "sexo": { "enum": ["macho", "hembra"] },
+      "edad_meses": { "bsonType": "number", "minimum": 1, "maximum": 372 },
+      "tamano": { "enum": ["pequeno", "mediano", "grande"] },
+      "descripcion": { "bsonType": "string", "minLength": 40, "maxLength": 2000 },
+      "temperamento": {
+        "bsonType": "array",
+        "minItems": 1,
+        "maxItems": 4,
+        "uniqueItems": true,
+        "items": {
+          "enum": ["tranquilo", "jugueton", "sociable", "carinoso", "timido", "independiente", "activo", "protector"]
+        }
+      },
+      "fotos": {
+        "bsonType": "array",
+        "minItems": 1,
+        "maxItems": 6,
+        "items": { "bsonType": "string", "minLength": 1 },
+        "description": "URLs públicas; la primera es la portada. Las fotos subidas viven en GridFS (bucket fotos)."
+      },
+      "estado": { "enum": ["disponible", "en_proceso", "adoptada"] },
+      "atributos_especie": { "bsonType": "object", "description": "Su forma depende de la especie (ver oneOf)." },
+      "historial_medico": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "object",
+          "required": ["_id", "fecha", "tipo", "descripcion"],
+          "additionalProperties": false,
+          "properties": {
+            "_id": { "bsonType": "objectId" },
+            "fecha": { "bsonType": "date" },
+            "tipo": { "enum": ["vacuna", "desparasitacion", "esterilizacion", "consulta", "cirugia", "tratamiento"] },
+            "descripcion": { "bsonType": "string", "minLength": 3, "maxLength": 300 },
+            "veterinario": { "bsonType": "string", "maxLength": 120 }
+          }
+        }
+      },
+      "esterilizado": { "bsonType": "bool" },
+      "fundacion_id": { "bsonType": "objectId" },
+      "fundacion": {
+        "bsonType": "object",
+        "description": "Patrón de referencia extendida: datos de la fundación que el catálogo muestra sin $lookup.",
+        "required": ["_id", "nombre", "ciudad"],
+        "additionalProperties": false,
+        "properties": {
+          "_id": { "bsonType": "objectId" },
+          "nombre": { "bsonType": "string" },
+          "ciudad": { "bsonType": "string" },
+          "localidad": { "bsonType": "string" },
+          "telefono": { "bsonType": "string" },
+          "correo": { "bsonType": "string" }
+        }
+      },
+      "ubicacion": { "$incluir": "geoPunto" },
+      "fecha_publicacion": { "bsonType": "date" },
+      "actualizado_en": { "bsonType": "date" }
+    },
+    "oneOf": [
+      {
+        "properties": {
+          "especie": { "enum": ["perro"] },
+          "atributos_especie": {
+            "bsonType": "object",
+            "required": ["nivel_energia", "necesita_patio", "apto_con_ninos", "apto_con_gatos", "entrenado"],
+            "additionalProperties": false,
+            "properties": {
+              "nivel_energia": { "enum": ["bajo", "medio", "alto"] },
+              "necesita_patio": { "bsonType": "bool" },
+              "apto_con_ninos": { "bsonType": "bool" },
+              "apto_con_gatos": { "bsonType": "bool" },
+              "entrenado": { "bsonType": "bool" }
+            }
+          }
+        }
+      },
+      {
+        "properties": {
+          "especie": { "enum": ["gato"] },
+          "atributos_especie": {
+            "bsonType": "object",
+            "required": ["usa_arenero", "apto_con_perros", "apto_con_ninos", "solo_interior"],
+            "additionalProperties": false,
+            "properties": {
+              "usa_arenero": { "bsonType": "bool" },
+              "apto_con_perros": { "bsonType": "bool" },
+              "apto_con_ninos": { "bsonType": "bool" },
+              "solo_interior": { "bsonType": "bool" }
+            }
+          }
+        }
+      },
+      {
+        "properties": {
+          "especie": { "enum": ["conejo"] },
+          "atributos_especie": {
+            "bsonType": "object",
+            "required": ["usa_arenero", "tipo_pelaje", "apto_con_ninos", "requiere_jaula_amplia"],
+            "additionalProperties": false,
+            "properties": {
+              "usa_arenero": { "bsonType": "bool" },
+              "tipo_pelaje": { "enum": ["corto", "largo"] },
+              "apto_con_ninos": { "bsonType": "bool" },
+              "requiere_jaula_amplia": { "bsonType": "bool" }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

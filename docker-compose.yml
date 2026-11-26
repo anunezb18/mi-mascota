@@ -71,6 +71,8 @@ services:
     environment:
       # Sobrescribe la URI de .env para usar la red interna de Docker
       MONGO_URI: mongodb://mongo1:27017,mongo2:27017,mongo3:27017/?replicaSet=${MONGO_REPLICA_SET_NAME:-rs0}
+      # Recarga en caliente con volúmenes en Windows/macOS
+      WATCHFILES_FORCE_POLLING: "true"
     command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
     ports:
       - "${BACKEND_PORT:-8000}:8000"
@@ -78,6 +80,12 @@ services:
       - ./backend:/app
     depends_on:
       mongo-setup: { condition: service_completed_successfully }
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
     networks: [mimascota-net]
 
   # ---------------- Frontend: React + Vite ----------------
@@ -96,7 +104,7 @@ services:
       - ./frontend:/app
       - /app/node_modules
     depends_on:
-      - backend
+      backend: { condition: service_healthy }
     networks: [mimascota-net]
 
 networks:

@@ -4,8 +4,8 @@ Interfaz web de MiMascota, la plataforma de adopción de mascotas que conecta fu
 
 El frontend funciona de dos maneras:
 
+- **Modo API** (`VITE_USE_MOCK=false`, el predeterminado): muestra los datos reales de MongoDB a través del backend FastAPI y del WebSocket de notificaciones descritos en el [contrato de la API](#contrato-de-la-api).
 - **Modo mock** (`VITE_USE_MOCK=true`): no necesita backend. Una base de datos simulada en el navegador replica las colecciones de MongoDB, las reglas de negocio y las notificaciones en tiempo real.
-- **Modo API** (`VITE_USE_MOCK=false`): consume el backend FastAPI y el WebSocket de notificaciones descritos en el [contrato de la API](#contrato-de-la-api).
 
 ## Contenido
 
@@ -44,7 +44,7 @@ cp .env.example .env      # en Windows: copy .env.example .env
 npm run dev
 ```
 
-Abra http://localhost:5173. El archivo `.env.example` trae `VITE_USE_MOCK=true`, así que la aplicación funciona sin backend.
+Abra http://localhost:5173. El archivo `.env.example` trae `VITE_USE_MOCK=false`, así que la aplicación consume la API: levante antes la base y el backend (`docker compose up -d backend` desde la raíz). Para trabajar sin backend, cambie el valor a `true`.
 
 | Script | Uso |
 |---|---|
@@ -59,18 +59,18 @@ Abra http://localhost:5173. El archivo `.env.example` trae `VITE_USE_MOCK=true`,
 |---|---|---|
 | `VITE_API_URL` | `http://localhost:8000/api` | URL base de la API REST |
 | `VITE_WS_URL` | `ws://localhost:8000/ws/notificaciones` | WebSocket de notificaciones |
-| `VITE_USE_MOCK` | `true` en `.env.example` | `true`: datos simulados; `false`: API real |
+| `VITE_USE_MOCK` | `false` en `.env.example` | `false`: datos reales de la API; `true`: datos simulados |
 | `VITE_USE_POLLING` | no definida | `true` activa la detección de cambios por sondeo (Docker en Windows o macOS) |
 
 ### Con Docker Compose
 
-Desde la raíz del repositorio, `docker compose up frontend` levanta el servicio en el puerto 5173. En `docker-compose.yml` el modo mock está desactivado por defecto (`VITE_USE_MOCK:-false`); para usarlo sin backend defina `VITE_USE_MOCK=true` en el `.env` de la raíz.
+Desde la raíz del repositorio, `docker compose up -d --build` levanta la base, el backend y el frontend (puerto 5173). El frontend usa la API real (`VITE_USE_MOCK:-false`); para usar el modo mock defina `VITE_USE_MOCK=true` en el `.env` de la raíz.
 
 ## Modo mock
 
 ### Cuentas de demostración
 
-Todas usan la contraseña **`MiMascota2026`**. En modo mock la pantalla de ingreso muestra botones para entrar con un clic.
+Todas usan la contraseña **`MiMascota2026`**. Las mismas cuentas existen en la base de datos real (ver [database/README.md](../database/README.md#datos-de-prueba)). En modo mock la pantalla de ingreso muestra botones para entrar con un clic.
 
 | Rol | Correo | Situación |
 |---|---|---|
@@ -84,7 +84,7 @@ Todas usan la contraseña **`MiMascota2026`**. En modo mock la pantalla de ingre
 ### Datos simulados
 
 - 7 fundaciones en localidades reales de Bogotá, con coordenadas reales; 24 mascotas (perros, gatos y conejos); 10 solicitudes; y un historial de notificaciones coherente con esos datos.
-- Los cambios se guardan en `localStorage` con la clave `mimascota.mockdb.v4` y sobreviven a las recargas. Para volver al estado inicial, borre esa clave desde las herramientas del navegador (Aplicación > Almacenamiento local) y recargue.
+- Los cambios se guardan en `localStorage` con la clave `mimascota.mockdb.v5` y sobreviven a las recargas. Para volver al estado inicial, borre esa clave desde las herramientas del navegador (Aplicación > Almacenamiento local) y recargue.
 - La latencia de red se simula entre 250 y 900 ms para que se vean los estados de carga.
 - Las fotos que sube una fundación se comprimen en el navegador y se guardan dentro de los datos simulados. El almacenamiento local admite unos 5 MB; si se llena, la aplicación sigue funcionando, pero esas fotos se pierden al recargar.
 

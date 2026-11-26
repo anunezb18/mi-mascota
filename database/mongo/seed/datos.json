@@ -1,0 +1,4093 @@
+{
+  "referencia": {
+    "$date": "2026-11-26T02:31:38.281Z"
+  },
+  "usuarios": [
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000001"
+      },
+      "nombre": "Administración MiMascota",
+      "correo": "admin@mimascota.co",
+      "rol": "administrador",
+      "activo": true,
+      "fecha_registro": {
+        "$date": "2026-05-30T02:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    },
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000002"
+      },
+      "nombre": "Laura Gómez Rincón",
+      "correo": "adoptante@mimascota.co",
+      "telefono": "3104567890",
+      "rol": "adoptante",
+      "activo": true,
+      "ciudad": "Bogotá",
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0636,
+          4.6534
+        ]
+      },
+      "perfil_estilo_vida": {
+        "tipo_vivienda": "apartamento",
+        "tiene_patio": false,
+        "horas_disponibles": 4,
+        "tiene_ninos": false,
+        "tiene_otras_mascotas": true,
+        "otras_mascotas": [
+          "gato"
+        ],
+        "experiencia_previa": true,
+        "especies_preferidas": [
+          "perro",
+          "gato"
+        ],
+        "tamanos_preferidos": [
+          "pequeno",
+          "mediano"
+        ],
+        "actualizado_en": {
+          "$date": "2026-11-14T02:31:38.283Z"
+        }
+      },
+      "fecha_registro": {
+        "$date": "2026-10-17T02:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    },
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000003"
+      },
+      "nombre": "Camilo Andrés Pardo",
+      "correo": "camilo.pardo@correo.co",
+      "telefono": "3209876543",
+      "rol": "adoptante",
+      "activo": true,
+      "ciudad": "Bogotá",
+      "perfil_estilo_vida": {
+        "tipo_vivienda": "casa",
+        "tiene_patio": true,
+        "horas_disponibles": 6,
+        "tiene_ninos": true,
+        "tiene_otras_mascotas": false,
+        "otras_mascotas": [],
+        "experiencia_previa": true,
+        "especies_preferidas": [
+          "perro"
+        ],
+        "tamanos_preferidos": [
+          "mediano",
+          "grande"
+        ],
+        "actualizado_en": {
+          "$date": "2026-11-06T02:31:38.283Z"
+        }
+      },
+      "fecha_registro": {
+        "$date": "2026-09-22T02:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    },
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000004"
+      },
+      "nombre": "Valentina Ríos Castaño",
+      "correo": "valentina.rios@correo.co",
+      "telefono": "3015558822",
+      "rol": "adoptante",
+      "activo": true,
+      "ciudad": "Bogotá",
+      "perfil_estilo_vida": {
+        "tipo_vivienda": "apartamento",
+        "tiene_patio": false,
+        "horas_disponibles": 3,
+        "tiene_ninos": false,
+        "tiene_otras_mascotas": false,
+        "otras_mascotas": [],
+        "experiencia_previa": false,
+        "especies_preferidas": [
+          "gato",
+          "conejo"
+        ],
+        "tamanos_preferidos": [
+          "pequeno"
+        ],
+        "actualizado_en": {
+          "$date": "2026-11-18T02:31:38.283Z"
+        }
+      },
+      "fecha_registro": {
+        "$date": "2026-10-27T02:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    },
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000005"
+      },
+      "nombre": "Julián Esteban Mora",
+      "correo": "julian.mora@correo.co",
+      "telefono": "3127771234",
+      "rol": "adoptante",
+      "activo": true,
+      "ciudad": "Bogotá",
+      "perfil_estilo_vida": {
+        "tipo_vivienda": "finca",
+        "tiene_patio": true,
+        "horas_disponibles": 8,
+        "tiene_ninos": true,
+        "tiene_otras_mascotas": true,
+        "otras_mascotas": [
+          "perro"
+        ],
+        "experiencia_previa": true,
+        "especies_preferidas": [
+          "perro"
+        ],
+        "tamanos_preferidos": [
+          "grande"
+        ],
+        "actualizado_en": {
+          "$date": "2026-11-11T02:31:38.283Z"
+        }
+      },
+      "fecha_registro": {
+        "$date": "2026-08-28T02:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    },
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000006"
+      },
+      "nombre": "Mariana Lozano Pérez",
+      "correo": "mariana.lozano@correo.co",
+      "rol": "adoptante",
+      "activo": false,
+      "ciudad": "Soacha",
+      "fecha_registro": {
+        "$date": "2026-07-29T02:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    },
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000011"
+      },
+      "nombre": "Paula Andrea Suárez",
+      "correo": "fundacion@mimascota.co",
+      "telefono": "6017423311",
+      "rol": "fundacion",
+      "activo": true,
+      "ciudad": "Bogotá",
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000001"
+      },
+      "fecha_registro": {
+        "$date": "2026-06-29T02:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    },
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000012"
+      },
+      "nombre": "Andrés Felipe Cortés",
+      "correo": "contacto@patitaschapinero.org",
+      "telefono": "6013459087",
+      "rol": "fundacion",
+      "activo": true,
+      "ciudad": "Bogotá",
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000002"
+      },
+      "fecha_registro": {
+        "$date": "2026-07-09T02:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    },
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000013"
+      },
+      "nombre": "Diana Marcela Rojas",
+      "correo": "adopciones@hogarpeludo.org",
+      "telefono": "6014567712",
+      "rol": "fundacion",
+      "activo": true,
+      "ciudad": "Bogotá",
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000003"
+      },
+      "fecha_registro": {
+        "$date": "2026-08-08T02:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    },
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000014"
+      },
+      "nombre": "Sergio Iván Molina",
+      "correo": "info@segundaoportunidad.org",
+      "telefono": "6016238844",
+      "rol": "fundacion",
+      "activo": true,
+      "ciudad": "Bogotá",
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000004"
+      },
+      "fecha_registro": {
+        "$date": "2026-08-23T02:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    },
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000015"
+      },
+      "nombre": "Natalia Herrera Gil",
+      "correo": "hola@bigotesteusaquillo.org",
+      "telefono": "3156672290",
+      "rol": "fundacion",
+      "activo": true,
+      "ciudad": "Bogotá",
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000005"
+      },
+      "fecha_registro": {
+        "$date": "2026-11-23T02:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    },
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000016"
+      },
+      "nombre": "Óscar Javier Beltrán",
+      "correo": "refugiodelsur@correo.co",
+      "telefono": "3189001122",
+      "rol": "fundacion",
+      "activo": true,
+      "ciudad": "Bogotá",
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000006"
+      },
+      "fecha_registro": {
+        "$date": "2026-11-01T02:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    },
+    {
+      "_id": {
+        "$oid": "6740a1f0c2b1a10000000017"
+      },
+      "nombre": "Jorge Luis Peña Ortiz",
+      "correo": "contacto@ronroneosengativa.org",
+      "telefono": "3017784512",
+      "rol": "fundacion",
+      "activo": true,
+      "ciudad": "Bogotá",
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000007"
+      },
+      "fecha_registro": {
+        "$date": "2026-11-24T21:31:38.283Z"
+      },
+      "contrasena_hash": "$2b$12$QCmhhJf8wc/sBbImLK7NHu0YZOwj/IC2K8Qf3OK.YU8gXrwOcec6G"
+    }
+  ],
+  "fundaciones": [
+    {
+      "_id": {
+        "$oid": "6740b2e0d3c2b20000000001"
+      },
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000011"
+      },
+      "nombre": "Fundación Huellas de Suba",
+      "nit": "901.234.567-1",
+      "descripcion": "Rescatamos perros y gatos en situación de calle en el noroccidente de Bogotá. Brindamos atención veterinaria, esterilización y acompañamiento a las familias adoptantes.",
+      "direccion": "Calle 145 # 91-19",
+      "ciudad": "Bogotá",
+      "localidad": "Suba",
+      "telefono": "6017423311",
+      "correo": "fundacion@mimascota.co",
+      "sitio_web": "https://huellasdesuba.org",
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0836,
+          4.7417
+        ]
+      },
+      "estado_validacion": "aprobada",
+      "fecha_registro": {
+        "$date": "2026-06-29T02:31:38.283Z"
+      },
+      "fecha_validacion": {
+        "$date": "2026-07-01T02:31:38.283Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6740b2e0d3c2b20000000002"
+      },
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000012"
+      },
+      "nombre": "Refugio Patitas de Chapinero",
+      "nit": "900.876.432-5",
+      "descripcion": "Hogar de paso para gatos y perros pequeños. Trabajamos con una red de voluntarios que ofrecen hogares temporales mientras encontramos familias definitivas.",
+      "direccion": "Carrera 13 # 57-24",
+      "ciudad": "Bogotá",
+      "localidad": "Chapinero",
+      "telefono": "6013459087",
+      "correo": "contacto@patitaschapinero.org",
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0628,
+          4.6486
+        ]
+      },
+      "estado_validacion": "aprobada",
+      "fecha_registro": {
+        "$date": "2026-07-09T02:31:38.283Z"
+      },
+      "fecha_validacion": {
+        "$date": "2026-07-12T02:31:38.283Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6740b2e0d3c2b20000000003"
+      },
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000013"
+      },
+      "nombre": "Fundación Hogar Peludo",
+      "nit": "901.556.789-0",
+      "descripcion": "Albergue con capacidad para 80 animales en el suroccidente de la ciudad. Promovemos la adopción responsable y la tenencia consciente con talleres comunitarios.",
+      "direccion": "Avenida Primero de Mayo # 72-45 Sur",
+      "ciudad": "Bogotá",
+      "localidad": "Kennedy",
+      "telefono": "6014567712",
+      "correo": "adopciones@hogarpeludo.org",
+      "sitio_web": "https://hogarpeludo.org",
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.1469,
+          4.628
+        ]
+      },
+      "estado_validacion": "aprobada",
+      "fecha_registro": {
+        "$date": "2026-08-08T02:31:38.283Z"
+      },
+      "fecha_validacion": {
+        "$date": "2026-08-10T02:31:38.283Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6740b2e0d3c2b20000000004"
+      },
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000014"
+      },
+      "nombre": "Albergue Segunda Oportunidad",
+      "nit": "900.998.112-3",
+      "descripcion": "Nos especializamos en animales adultos y senior que han sido abandonados. Creemos que cada animal merece una segunda oportunidad sin importar su edad.",
+      "direccion": "Carrera 7 # 119-40",
+      "ciudad": "Bogotá",
+      "localidad": "Usaquén",
+      "telefono": "6016238844",
+      "correo": "info@segundaoportunidad.org",
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.031,
+          4.695
+        ]
+      },
+      "estado_validacion": "aprobada",
+      "fecha_registro": {
+        "$date": "2026-08-23T02:31:38.283Z"
+      },
+      "fecha_validacion": {
+        "$date": "2026-08-26T02:31:38.283Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6740b2e0d3c2b20000000005"
+      },
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000015"
+      },
+      "nombre": "Colectivo Bigotes de Teusaquillo",
+      "nit": "901.778.345-6",
+      "descripcion": "Colectivo de vecinos que rescata y rehabilita gatos comunitarios del sector de Teusaquillo y La Soledad.",
+      "direccion": "Calle 39 # 21-08",
+      "ciudad": "Bogotá",
+      "localidad": "Teusaquillo",
+      "telefono": "3156672290",
+      "correo": "hola@bigotesteusaquillo.org",
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.079,
+          4.6375
+        ]
+      },
+      "estado_validacion": "pendiente",
+      "fecha_registro": {
+        "$date": "2026-11-23T02:31:38.283Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6740b2e0d3c2b20000000006"
+      },
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000016"
+      },
+      "nombre": "Refugio Animal del Sur",
+      "nit": "900.123.456-1",
+      "descripcion": "Refugio para animales.",
+      "direccion": "Sin dirección registrada",
+      "ciudad": "Bogotá",
+      "localidad": "Bosa",
+      "telefono": "3189001122",
+      "correo": "refugiodelsur@correo.co",
+      "estado_validacion": "rechazada",
+      "motivo_rechazo": "El dígito de verificación del NIT no corresponde (debería ser 8) y no se adjuntó una dirección verificable. Puede registrarse nuevamente con la información corregida.",
+      "fecha_registro": {
+        "$date": "2026-11-01T02:31:38.283Z"
+      },
+      "fecha_validacion": {
+        "$date": "2026-11-04T02:31:38.283Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6740b2e0d3c2b20000000007"
+      },
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000017"
+      },
+      "nombre": "Fundación Ronroneos de Engativá",
+      "nit": "901.678.234-5",
+      "descripcion": "Rescate y rehabilitación de gatos ferales y abandonados en el occidente de Bogotá. Realizamos jornadas de esterilización a bajo costo y buscamos hogares responsables para los gatos socializados.",
+      "direccion": "Calle 72 # 110-35",
+      "ciudad": "Bogotá",
+      "localidad": "Engativá",
+      "telefono": "3017784512",
+      "correo": "contacto@ronroneosengativa.org",
+      "sitio_web": "https://ronroneosengativa.org",
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.1146,
+          4.7086
+        ]
+      },
+      "estado_validacion": "pendiente",
+      "fecha_registro": {
+        "$date": "2026-11-24T21:31:38.283Z"
+      }
+    }
+  ],
+  "mascotas": [
+    {
+      "nombre": "Canela",
+      "especie": "perro",
+      "raza": "Criolla mestiza",
+      "sexo": "hembra",
+      "edad_meses": 30,
+      "tamano": "mediano",
+      "descripcion": "Canela fue rescatada en el humedal La Conejera. Es tranquila dentro de casa, disfruta las caminatas largas y se lleva muy bien con otros perros y con gatos. Conoce las órdenes básicas y camina bien con traílla.",
+      "temperamento": [
+        "carinoso",
+        "sociable",
+        "jugueton"
+      ],
+      "fotos": [
+        "https://images.dog.ceo/breeds/mix/uhie.jpg"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "nivel_energia": "medio",
+        "necesita_patio": false,
+        "apto_con_ninos": true,
+        "apto_con_gatos": true,
+        "entrenado": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a4325820511f77a14"
+          },
+          "fecha": {
+            "$date": "2026-09-12T02:31:38.284Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización sin complicaciones. Retiro de puntos a los 10 días.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a930f2173a39cb7af"
+          },
+          "fecha": {
+            "$date": "2026-08-28T02:31:38.284Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna antirrábica. Próximo refuerzo en un año.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a22c67607263d9bfc"
+          },
+          "fecha": {
+            "$date": "2026-08-12T02:31:38.284Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna múltiple (moquillo, parvovirus, hepatitis, leptospira).",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0ae38eb683fdfba951"
+          },
+          "fecha": {
+            "$date": "2026-08-05T02:31:38.284Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna (praziquantel y pirantel) y externa.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a9be2662be70b66ef"
+          },
+          "fecha": {
+            "$date": "2026-07-29T02:31:38.284Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso: condición corporal adecuada, sin signos de enfermedad.",
+          "veterinario": "Dra. Carolina Méndez"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-11-08T02:31:38.284Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000001"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000001"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000001"
+        },
+        "nombre": "Fundación Huellas de Suba",
+        "ciudad": "Bogotá",
+        "localidad": "Suba",
+        "telefono": "6017423311",
+        "correo": "fundacion@mimascota.co"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0796,
+          4.7387
+        ]
+      }
+    },
+    {
+      "nombre": "Rocco",
+      "especie": "perro",
+      "raza": "Labrador retriever",
+      "sexo": "macho",
+      "edad_meses": 48,
+      "tamano": "grande",
+      "descripcion": "Rocco es un labrador lleno de energía que necesita ejercicio diario y espacio para correr. Ideal para una familia activa con patio. Le encanta nadar y traer la pelota.",
+      "temperamento": [
+        "sociable",
+        "activo",
+        "jugueton"
+      ],
+      "fotos": [
+        "https://images.dog.ceo/breeds/labrador/labrador_zack_01.jpg",
+        "https://images.dog.ceo/breeds/labrador/n02099712_5263.jpg"
+      ],
+      "estado": "en_proceso",
+      "esterilizado": true,
+      "atributos_especie": {
+        "nivel_energia": "alto",
+        "necesita_patio": true,
+        "apto_con_ninos": true,
+        "apto_con_gatos": false,
+        "entrenado": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a517c33b73d562077"
+          },
+          "fecha": {
+            "$date": "2026-09-27T02:31:38.284Z"
+          },
+          "tipo": "tratamiento",
+          "descripcion": "Tratamiento para otitis externa con gotas óticas durante 10 días. Resuelta.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0ab0c27d1adea6050b"
+          },
+          "fecha": {
+            "$date": "2026-06-24T02:31:38.284Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización sin complicaciones. Retiro de puntos a los 10 días.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a85452e9aa7aafa0b"
+          },
+          "fecha": {
+            "$date": "2026-06-09T02:31:38.284Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna antirrábica. Próximo refuerzo en un año.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a3b7237769ab6d4e9"
+          },
+          "fecha": {
+            "$date": "2026-05-24T02:31:38.284Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna múltiple (moquillo, parvovirus, hepatitis, leptospira).",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0aeb23ecbcd53b097f"
+          },
+          "fecha": {
+            "$date": "2026-05-17T02:31:38.284Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna (praziquantel y pirantel) y externa.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a1e4ebdef64a39d60"
+          },
+          "fecha": {
+            "$date": "2026-05-10T02:31:38.284Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso: condición corporal adecuada, sin signos de enfermedad.",
+          "veterinario": "Dr. Felipe Ospina"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-10-22T02:31:38.284Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000002"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000001"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000001"
+        },
+        "nombre": "Fundación Huellas de Suba",
+        "ciudad": "Bogotá",
+        "localidad": "Suba",
+        "telefono": "6017423311",
+        "correo": "fundacion@mimascota.co"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0896,
+          4.7437
+        ]
+      }
+    },
+    {
+      "nombre": "Mostaza",
+      "especie": "gato",
+      "raza": "Común europeo atigrado",
+      "sexo": "macho",
+      "edad_meses": 6,
+      "tamano": "pequeno",
+      "descripcion": "Mostaza llegó con sus hermanos a las seis semanas. Es curioso, juguetón y busca compañía todo el tiempo. Ya usa arenero y está acostumbrado al ruido de un hogar.",
+      "temperamento": [
+        "jugueton",
+        "carinoso",
+        "activo"
+      ],
+      "fotos": [
+        "https://cdn2.thecatapi.com/images/6s7.jpg"
+      ],
+      "estado": "disponible",
+      "esterilizado": false,
+      "atributos_especie": {
+        "usa_arenero": true,
+        "apto_con_perros": true,
+        "apto_con_ninos": true,
+        "solo_interior": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a0f91addc1c74ece0"
+          },
+          "fecha": {
+            "$date": "2026-10-18T02:31:38.284Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna triple felina (rinotraqueítis, calicivirus, panleucopenia).",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a3c7af5ee82fbc08e"
+          },
+          "fecha": {
+            "$date": "2026-10-02T02:31:38.284Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna y aplicación de pipeta antipulgas.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0ad1d9d2e442579652"
+          },
+          "fecha": {
+            "$date": "2026-09-27T02:31:38.284Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso. Prueba de leucemia e inmunodeficiencia felina negativa.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-11-20T02:31:38.284Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000003"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000001"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000001"
+        },
+        "nombre": "Fundación Huellas de Suba",
+        "ciudad": "Bogotá",
+        "localidad": "Suba",
+        "telefono": "6017423311",
+        "correo": "fundacion@mimascota.co"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0816,
+          4.7467
+        ]
+      }
+    },
+    {
+      "nombre": "Luna",
+      "especie": "gato",
+      "raza": "Común europeo",
+      "sexo": "hembra",
+      "edad_meses": 24,
+      "tamano": "pequeno",
+      "descripcion": "Luna es independiente y observadora. Prefiere hogares tranquilos, sin niños pequeños, donde pueda tener su propio espacio. Cuando toma confianza busca caricias.",
+      "temperamento": [
+        "tranquilo",
+        "independiente"
+      ],
+      "fotos": [
+        "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=1000&q=70&auto=format&fit=crop"
+      ],
+      "estado": "en_proceso",
+      "esterilizado": true,
+      "atributos_especie": {
+        "usa_arenero": true,
+        "apto_con_perros": false,
+        "apto_con_ninos": false,
+        "solo_interior": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a9005470b45dc34ce"
+          },
+          "fecha": {
+            "$date": "2026-08-08T02:31:38.284Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización. Recuperación completa.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a8f843c15dfdf348f"
+          },
+          "fecha": {
+            "$date": "2026-07-20T02:31:38.284Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna triple felina (rinotraqueítis, calicivirus, panleucopenia).",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a12d30dbc67c56f2f"
+          },
+          "fecha": {
+            "$date": "2026-07-04T02:31:38.284Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna y aplicación de pipeta antipulgas.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a562088b88815cdf9"
+          },
+          "fecha": {
+            "$date": "2026-06-29T02:31:38.284Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso. Prueba de leucemia e inmunodeficiencia felina negativa.",
+          "veterinario": "Dra. Carolina Méndez"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-10-17T02:31:38.284Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000004"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000001"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000001"
+        },
+        "nombre": "Fundación Huellas de Suba",
+        "ciudad": "Bogotá",
+        "localidad": "Suba",
+        "telefono": "6017423311",
+        "correo": "fundacion@mimascota.co"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0866,
+          4.7357
+        ]
+      }
+    },
+    {
+      "nombre": "Copito",
+      "especie": "conejo",
+      "raza": "Mestizo",
+      "sexo": "macho",
+      "edad_meses": 10,
+      "tamano": "pequeno",
+      "descripcion": "Copito es tímido al principio, pero con paciencia se deja cargar y acariciar. Necesita un espacio amplio para moverse fuera de la jaula varias horas al día.",
+      "temperamento": [
+        "tranquilo",
+        "timido"
+      ],
+      "fotos": [
+        "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=1000&q=70&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1559214369-a6b1d7919865?w=1000&q=70&auto=format&fit=crop"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "usa_arenero": true,
+        "tipo_pelaje": "corto",
+        "apto_con_ninos": true,
+        "requiere_jaula_amplia": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a4dae4074b22fea5c"
+          },
+          "fecha": {
+            "$date": "2026-10-17T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización realizada por veterinario de exóticos.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0ace801c977fb5dc5b"
+          },
+          "fecha": {
+            "$date": "2026-09-22T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna contra mixomatosis y enfermedad hemorrágica vírica.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a63bbb05c9ad890fe"
+          },
+          "fecha": {
+            "$date": "2026-09-07T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna con ivermectina.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0aa0588ef42f07c553"
+          },
+          "fecha": {
+            "$date": "2026-08-28T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Revisión general: dentadura y pelaje en buen estado.",
+          "veterinario": "Dr. Felipe Ospina"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-11-14T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000005"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000001"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000001"
+        },
+        "nombre": "Fundación Huellas de Suba",
+        "ciudad": "Bogotá",
+        "localidad": "Suba",
+        "telefono": "6017423311",
+        "correo": "fundacion@mimascota.co"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0766,
+          4.7427
+        ]
+      }
+    },
+    {
+      "nombre": "Thor",
+      "especie": "perro",
+      "raza": "Husky siberiano",
+      "sexo": "macho",
+      "edad_meses": 60,
+      "tamano": "grande",
+      "descripcion": "Thor fue entregado por su familia anterior por falta de espacio. Es noble pero muy activo e independiente: requiere una persona con experiencia en la raza, paseos largos y un hogar con patio.",
+      "temperamento": [
+        "activo",
+        "independiente"
+      ],
+      "fotos": [
+        "https://images.dog.ceo/breeds/husky/n02110185_3328.jpg",
+        "https://images.dog.ceo/breeds/husky/n02110185_10175.jpg"
+      ],
+      "estado": "en_proceso",
+      "esterilizado": true,
+      "atributos_especie": {
+        "nivel_energia": "alto",
+        "necesita_patio": true,
+        "apto_con_ninos": true,
+        "apto_con_gatos": false,
+        "entrenado": false
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a1173af89dfd001be"
+          },
+          "fecha": {
+            "$date": "2026-07-14T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización sin complicaciones. Retiro de puntos a los 10 días.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0abd072c63514a3486"
+          },
+          "fecha": {
+            "$date": "2026-06-29T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna antirrábica. Próximo refuerzo en un año.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0aa85ae5b5809e697d"
+          },
+          "fecha": {
+            "$date": "2026-06-13T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna múltiple (moquillo, parvovirus, hepatitis, leptospira).",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a7a029bd40cc22c0b"
+          },
+          "fecha": {
+            "$date": "2026-06-06T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna (praziquantel y pirantel) y externa.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a1f759abdb92f2ab3"
+          },
+          "fecha": {
+            "$date": "2026-05-30T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso: condición corporal adecuada, sin signos de enfermedad.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-10-07T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000006"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000001"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000001"
+        },
+        "nombre": "Fundación Huellas de Suba",
+        "ciudad": "Bogotá",
+        "localidad": "Suba",
+        "telefono": "6017423311",
+        "correo": "fundacion@mimascota.co"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0916,
+          4.7477
+        ]
+      }
+    },
+    {
+      "nombre": "Pelusa",
+      "especie": "gato",
+      "raza": "Sphynx",
+      "sexo": "hembra",
+      "edad_meses": 36,
+      "tamano": "pequeno",
+      "descripcion": "Pelusa fue rescatada de un criadero ilegal. Al no tener pelo necesita baños periódicos y un hogar cálido. Es extremadamente cariñosa y sigue a su persona por toda la casa.",
+      "temperamento": [
+        "carinoso",
+        "sociable"
+      ],
+      "fotos": [
+        "https://cdn2.thecatapi.com/images/c9sGDkRoi.jpg"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "usa_arenero": true,
+        "apto_con_perros": true,
+        "apto_con_ninos": true,
+        "solo_interior": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a163a1cc335b8564b"
+          },
+          "fecha": {
+            "$date": "2026-10-27T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Control dermatológico: piel en buen estado. Se recomienda hidratación semanal.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a8b9f97ce7056be47"
+          },
+          "fecha": {
+            "$date": "2026-09-17T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización. Recuperación completa.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a211de9ef7944f3b8"
+          },
+          "fecha": {
+            "$date": "2026-08-29T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna triple felina (rinotraqueítis, calicivirus, panleucopenia).",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a57ab5271d375843a"
+          },
+          "fecha": {
+            "$date": "2026-08-13T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna y aplicación de pipeta antipulgas.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a78e29aaa693d1728"
+          },
+          "fecha": {
+            "$date": "2026-08-08T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso. Prueba de leucemia e inmunodeficiencia felina negativa.",
+          "veterinario": "Dr. Julián Restrepo"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-11-17T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000007"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000002"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000002"
+        },
+        "nombre": "Refugio Patitas de Chapinero",
+        "ciudad": "Bogotá",
+        "localidad": "Chapinero",
+        "telefono": "6013459087",
+        "correo": "contacto@patitaschapinero.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0598,
+          4.6506
+        ]
+      }
+    },
+    {
+      "nombre": "Simón",
+      "especie": "gato",
+      "raza": "Común europeo bicolor",
+      "sexo": "macho",
+      "edad_meses": 18,
+      "tamano": "pequeno",
+      "descripcion": "Simón es sociable y juguetón. Convive en su hogar de paso con dos perros pequeños y un niño de ocho años. Le gustan las ventanas y los juguetes de plumas.",
+      "temperamento": [
+        "sociable",
+        "jugueton"
+      ],
+      "fotos": [
+        "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1000&q=70&auto=format&fit=crop"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "usa_arenero": true,
+        "apto_con_perros": true,
+        "apto_con_ninos": true,
+        "solo_interior": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a3eae4b960198bcee"
+          },
+          "fecha": {
+            "$date": "2026-10-17T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización. Recuperación completa.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a0752ebb9dec25fcc"
+          },
+          "fecha": {
+            "$date": "2026-09-28T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna triple felina (rinotraqueítis, calicivirus, panleucopenia).",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a397e9de5a09e873f"
+          },
+          "fecha": {
+            "$date": "2026-09-12T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna y aplicación de pipeta antipulgas.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a39b4c1a6802e371d"
+          },
+          "fecha": {
+            "$date": "2026-09-07T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso. Prueba de leucemia e inmunodeficiencia felina negativa.",
+          "veterinario": "Dra. Carolina Méndez"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-11-11T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000008"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000002"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000002"
+        },
+        "nombre": "Refugio Patitas de Chapinero",
+        "ciudad": "Bogotá",
+        "localidad": "Chapinero",
+        "telefono": "6013459087",
+        "correo": "contacto@patitaschapinero.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0668,
+          4.6526
+        ]
+      }
+    },
+    {
+      "nombre": "Kiara",
+      "especie": "perro",
+      "raza": "Dachshund",
+      "sexo": "hembra",
+      "edad_meses": 54,
+      "tamano": "pequeno",
+      "descripcion": "Kiara es una salchicha tranquila y muy apegada. Ideal para apartamento. Por su raza se debe cuidar que no suba ni baje escaleras con frecuencia.",
+      "temperamento": [
+        "carinoso",
+        "tranquilo"
+      ],
+      "fotos": [
+        "https://images.dog.ceo/breeds/dachshund/reese.jpg"
+      ],
+      "estado": "en_proceso",
+      "esterilizado": true,
+      "atributos_especie": {
+        "nivel_energia": "bajo",
+        "necesita_patio": false,
+        "apto_con_ninos": true,
+        "apto_con_gatos": true,
+        "entrenado": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a5b0c28c96be11942"
+          },
+          "fecha": {
+            "$date": "2026-10-12T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Radiografía de columna sin hallazgos. Mantener peso controlado.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a42ab1004de796674"
+          },
+          "fecha": {
+            "$date": "2026-08-23T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización sin complicaciones. Retiro de puntos a los 10 días.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a8e4479f43c505fe6"
+          },
+          "fecha": {
+            "$date": "2026-08-08T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna antirrábica. Próximo refuerzo en un año.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a0a92f70bc3df0109"
+          },
+          "fecha": {
+            "$date": "2026-07-23T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna múltiple (moquillo, parvovirus, hepatitis, leptospira).",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a9539c37940a3f8aa"
+          },
+          "fecha": {
+            "$date": "2026-07-16T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna (praziquantel y pirantel) y externa.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a4a9642eaf3ead44c"
+          },
+          "fecha": {
+            "$date": "2026-07-09T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso: condición corporal adecuada, sin signos de enfermedad.",
+          "veterinario": "Dr. Julián Restrepo"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-11-04T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000009"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000002"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000002"
+        },
+        "nombre": "Refugio Patitas de Chapinero",
+        "ciudad": "Bogotá",
+        "localidad": "Chapinero",
+        "telefono": "6013459087",
+        "correo": "contacto@patitaschapinero.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0578,
+          4.6446
+        ]
+      }
+    },
+    {
+      "nombre": "Nube",
+      "especie": "conejo",
+      "raza": "Belier",
+      "sexo": "hembra",
+      "edad_meses": 14,
+      "tamano": "pequeno",
+      "descripcion": "Nube es una coneja belier muy dócil, acostumbrada a convivir con personas. Come heno, verduras frescas y pellets. Usa arenero sin problema.",
+      "temperamento": [
+        "carinoso",
+        "tranquilo"
+      ],
+      "fotos": [
+        "https://images.unsplash.com/photo-1591382386627-349b692688ff?w=1000&q=70&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1452857297128-d9c29adba80b?w=1000&q=70&auto=format&fit=crop"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "usa_arenero": true,
+        "tipo_pelaje": "largo",
+        "apto_con_ninos": true,
+        "requiere_jaula_amplia": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a42aa2b12b0c96e4b"
+          },
+          "fecha": {
+            "$date": "2026-10-07T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización realizada por veterinario de exóticos.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0af6056d9533f09525"
+          },
+          "fecha": {
+            "$date": "2026-09-12T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna contra mixomatosis y enfermedad hemorrágica vírica.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a9f3bf2616c983052"
+          },
+          "fecha": {
+            "$date": "2026-08-28T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna con ivermectina.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0afee3a111b4266510"
+          },
+          "fecha": {
+            "$date": "2026-08-18T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Revisión general: dentadura y pelaje en buen estado.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-11-22T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000010"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000002"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000002"
+        },
+        "nombre": "Refugio Patitas de Chapinero",
+        "ciudad": "Bogotá",
+        "localidad": "Chapinero",
+        "telefono": "6013459087",
+        "correo": "contacto@patitaschapinero.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0648,
+          4.6436
+        ]
+      }
+    },
+    {
+      "nombre": "Mango",
+      "especie": "gato",
+      "raza": "Mestizo",
+      "sexo": "macho",
+      "edad_meses": 4,
+      "tamano": "pequeno",
+      "descripcion": "Mango es un gatito de cuatro meses, activo y dormilón a partes iguales. Recomendamos adoptarlo junto con otro gato joven o en un hogar donde tenga compañía.",
+      "temperamento": [
+        "jugueton",
+        "activo"
+      ],
+      "fotos": [
+        "https://cdn2.thecatapi.com/images/ck2.jpg"
+      ],
+      "estado": "disponible",
+      "esterilizado": false,
+      "atributos_especie": {
+        "usa_arenero": true,
+        "apto_con_perros": true,
+        "apto_con_ninos": true,
+        "solo_interior": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0afef6de7c9dd1b4cb"
+          },
+          "fecha": {
+            "$date": "2026-10-28T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna triple felina (rinotraqueítis, calicivirus, panleucopenia).",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a9c9126a58187f9bb"
+          },
+          "fecha": {
+            "$date": "2026-10-12T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna y aplicación de pipeta antipulgas.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0ab452d5bc55935a72"
+          },
+          "fecha": {
+            "$date": "2026-10-07T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso. Prueba de leucemia e inmunodeficiencia felina negativa.",
+          "veterinario": "Dr. Felipe Ospina"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-11-24T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000011"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000002"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000002"
+        },
+        "nombre": "Refugio Patitas de Chapinero",
+        "ciudad": "Bogotá",
+        "localidad": "Chapinero",
+        "telefono": "6013459087",
+        "correo": "contacto@patitaschapinero.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0618,
+          4.6546
+        ]
+      }
+    },
+    {
+      "nombre": "Frida",
+      "especie": "gato",
+      "raza": "Común europeo",
+      "sexo": "hembra",
+      "edad_meses": 30,
+      "tamano": "pequeno",
+      "descripcion": "Frida encontró hogar con una familia en Chapinero Alto. Gracias por ayudarnos a difundir su caso.",
+      "temperamento": [
+        "sociable",
+        "jugueton",
+        "carinoso"
+      ],
+      "fotos": [
+        "https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=1000&q=70&auto=format&fit=crop"
+      ],
+      "estado": "adoptada",
+      "esterilizado": true,
+      "atributos_especie": {
+        "usa_arenero": true,
+        "apto_con_perros": true,
+        "apto_con_ninos": true,
+        "solo_interior": false
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0afb2f41e177581e8d"
+          },
+          "fecha": {
+            "$date": "2026-07-29T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización. Recuperación completa.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a50b61b569411dfc4"
+          },
+          "fecha": {
+            "$date": "2026-07-10T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna triple felina (rinotraqueítis, calicivirus, panleucopenia).",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a969147cfd18b12fc"
+          },
+          "fecha": {
+            "$date": "2026-06-24T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna y aplicación de pipeta antipulgas.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a7a6b723437d28b66"
+          },
+          "fecha": {
+            "$date": "2026-06-19T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso. Prueba de leucemia e inmunodeficiencia felina negativa.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-09-17T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000012"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000002"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000002"
+        },
+        "nombre": "Refugio Patitas de Chapinero",
+        "ciudad": "Bogotá",
+        "localidad": "Chapinero",
+        "telefono": "6013459087",
+        "correo": "contacto@patitaschapinero.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.0678,
+          4.6476
+        ]
+      }
+    },
+    {
+      "nombre": "Negra",
+      "especie": "perro",
+      "raza": "Criolla mestiza",
+      "sexo": "hembra",
+      "edad_meses": 40,
+      "tamano": "mediano",
+      "descripcion": "Negra es leal y protectora con su familia. En el albergue es la más tranquila del patio. Se recomienda presentarla con calma a otros perros.",
+      "temperamento": [
+        "protector",
+        "carinoso",
+        "tranquilo"
+      ],
+      "fotos": [
+        "https://images.dog.ceo/breeds/pitbull/siena-123.jpg"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "nivel_energia": "medio",
+        "necesita_patio": false,
+        "apto_con_ninos": true,
+        "apto_con_gatos": false,
+        "entrenado": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0af89527341086714d"
+          },
+          "fecha": {
+            "$date": "2026-08-03T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización sin complicaciones. Retiro de puntos a los 10 días.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0ae4181c2c889d1911"
+          },
+          "fecha": {
+            "$date": "2026-07-19T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna antirrábica. Próximo refuerzo en un año.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a6a7aa1d3695c7128"
+          },
+          "fecha": {
+            "$date": "2026-07-03T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna múltiple (moquillo, parvovirus, hepatitis, leptospira).",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0affefa007e3a4d152"
+          },
+          "fecha": {
+            "$date": "2026-06-26T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna (praziquantel y pirantel) y externa.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a0d7bbdaee2032b5b"
+          },
+          "fecha": {
+            "$date": "2026-06-19T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso: condición corporal adecuada, sin signos de enfermedad.",
+          "veterinario": "Dra. Carolina Méndez"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-10-29T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000013"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000003"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000003"
+        },
+        "nombre": "Fundación Hogar Peludo",
+        "ciudad": "Bogotá",
+        "localidad": "Kennedy",
+        "telefono": "6014567712",
+        "correo": "adopciones@hogarpeludo.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.1439,
+          4.632
+        ]
+      }
+    },
+    {
+      "nombre": "Bruno",
+      "especie": "perro",
+      "raza": "American pitbull terrier",
+      "sexo": "macho",
+      "edad_meses": 36,
+      "tamano": "grande",
+      "descripcion": "Bruno es un perro sociable y juguetón con las personas. Necesita un adoptante con experiencia, paseos diarios y cumplir la normativa de razas de manejo especial (Ley 1801 de 2016).",
+      "temperamento": [
+        "protector",
+        "sociable",
+        "activo"
+      ],
+      "fotos": [
+        "https://images.dog.ceo/breeds/pitbull/dog-5437227_640.jpg"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "nivel_energia": "alto",
+        "necesita_patio": true,
+        "apto_con_ninos": false,
+        "apto_con_gatos": false,
+        "entrenado": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a7563d0ce9e668cc8"
+          },
+          "fecha": {
+            "$date": "2026-09-02T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización sin complicaciones. Retiro de puntos a los 10 días.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a59d25f3893289a3b"
+          },
+          "fecha": {
+            "$date": "2026-08-18T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna antirrábica. Próximo refuerzo en un año.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a6a5536af49fb1fd5"
+          },
+          "fecha": {
+            "$date": "2026-08-02T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna múltiple (moquillo, parvovirus, hepatitis, leptospira).",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a48715aa5fa42b2af"
+          },
+          "fecha": {
+            "$date": "2026-07-26T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna (praziquantel y pirantel) y externa.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a60c58357d99609bb"
+          },
+          "fecha": {
+            "$date": "2026-07-19T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso: condición corporal adecuada, sin signos de enfermedad.",
+          "veterinario": "Dr. Felipe Ospina"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-10-26T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000014"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000003"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000003"
+        },
+        "nombre": "Fundación Hogar Peludo",
+        "ciudad": "Bogotá",
+        "localidad": "Kennedy",
+        "telefono": "6014567712",
+        "correo": "adopciones@hogarpeludo.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.1509,
+          4.63
+        ]
+      }
+    },
+    {
+      "nombre": "Pecas",
+      "especie": "perro",
+      "raza": "Beagle",
+      "sexo": "macho",
+      "edad_meses": 20,
+      "tamano": "mediano",
+      "descripcion": "Pecas es un beagle alegre y curioso. Le encanta olfatear todo durante los paseos y jugar con niños. Puede ser vocal cuando se queda solo mucho tiempo.",
+      "temperamento": [
+        "jugueton",
+        "activo",
+        "sociable"
+      ],
+      "fotos": [
+        "https://images.dog.ceo/breeds/beagle/homer.jpg",
+        "https://images.dog.ceo/breeds/beagle/n02088364_16502.jpg"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "nivel_energia": "alto",
+        "necesita_patio": false,
+        "apto_con_ninos": true,
+        "apto_con_gatos": true,
+        "entrenado": false
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a97a79c85433a0354"
+          },
+          "fecha": {
+            "$date": "2026-10-12T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización sin complicaciones. Retiro de puntos a los 10 días.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a41620d622514b4be"
+          },
+          "fecha": {
+            "$date": "2026-09-27T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna antirrábica. Próximo refuerzo en un año.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a65d1c5d7036ba496"
+          },
+          "fecha": {
+            "$date": "2026-09-11T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna múltiple (moquillo, parvovirus, hepatitis, leptospira).",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0ac75b8ae0ba922a1a"
+          },
+          "fecha": {
+            "$date": "2026-09-04T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna (praziquantel y pirantel) y externa.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a4ee35718b8732200"
+          },
+          "fecha": {
+            "$date": "2026-08-28T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso: condición corporal adecuada, sin signos de enfermedad.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-11-16T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000015"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000003"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000003"
+        },
+        "nombre": "Fundación Hogar Peludo",
+        "ciudad": "Bogotá",
+        "localidad": "Kennedy",
+        "telefono": "6014567712",
+        "correo": "adopciones@hogarpeludo.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.1409,
+          4.626
+        ]
+      }
+    },
+    {
+      "nombre": "Tango",
+      "especie": "perro",
+      "raza": "Mestizo pastor",
+      "sexo": "macho",
+      "edad_meses": 16,
+      "tamano": "mediano",
+      "descripcion": "Tango es inteligente y aprende rápido. Necesita estimulación mental y juego diario con pelota. Convive bien con otros perros.",
+      "temperamento": [
+        "activo",
+        "jugueton"
+      ],
+      "fotos": [
+        "https://images.dog.ceo/breeds/mix/xeshabelka_%2835%29.jpg"
+      ],
+      "estado": "en_proceso",
+      "esterilizado": true,
+      "atributos_especie": {
+        "nivel_energia": "alto",
+        "necesita_patio": true,
+        "apto_con_ninos": true,
+        "apto_con_gatos": true,
+        "entrenado": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a98f308086e4bd741"
+          },
+          "fecha": {
+            "$date": "2026-11-01T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización sin complicaciones. Retiro de puntos a los 10 días.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0abda9138312903bb5"
+          },
+          "fecha": {
+            "$date": "2026-10-17T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna antirrábica. Próximo refuerzo en un año.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a1eb4b7419f13b407"
+          },
+          "fecha": {
+            "$date": "2026-10-01T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna múltiple (moquillo, parvovirus, hepatitis, leptospira).",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a46c8ff75a704582e"
+          },
+          "fecha": {
+            "$date": "2026-09-24T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna (praziquantel y pirantel) y externa.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a4b86f9a356ce857e"
+          },
+          "fecha": {
+            "$date": "2026-09-17T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso: condición corporal adecuada, sin signos de enfermedad.",
+          "veterinario": "Dr. Julián Restrepo"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-11-06T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000016"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000003"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000003"
+        },
+        "nombre": "Fundación Hogar Peludo",
+        "ciudad": "Bogotá",
+        "localidad": "Kennedy",
+        "telefono": "6014567712",
+        "correo": "adopciones@hogarpeludo.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.1489,
+          4.623
+        ]
+      }
+    },
+    {
+      "nombre": "Oreo",
+      "especie": "conejo",
+      "raza": "Holandés",
+      "sexo": "macho",
+      "edad_meses": 8,
+      "tamano": "pequeno",
+      "descripcion": "Oreo es un conejo activo y sociable que disfruta explorar. Se lleva bien con niños mayores que sepan cargarlo.",
+      "temperamento": [
+        "activo",
+        "sociable"
+      ],
+      "fotos": [
+        "https://images.unsplash.com/photo-1518796745738-41048802f99a?w=1000&q=70&auto=format&fit=crop"
+      ],
+      "estado": "disponible",
+      "esterilizado": false,
+      "atributos_especie": {
+        "usa_arenero": false,
+        "tipo_pelaje": "corto",
+        "apto_con_ninos": true,
+        "requiere_jaula_amplia": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0ad084b47517933067"
+          },
+          "fecha": {
+            "$date": "2026-10-22T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna contra mixomatosis y enfermedad hemorrágica vírica.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0ac1ce5ece76a27b0b"
+          },
+          "fecha": {
+            "$date": "2026-10-07T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna con ivermectina.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0ab0bcf6a329559a42"
+          },
+          "fecha": {
+            "$date": "2026-09-27T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Revisión general: dentadura y pelaje en buen estado.",
+          "veterinario": "Dra. Carolina Méndez"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-11-19T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000017"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000003"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000003"
+        },
+        "nombre": "Fundación Hogar Peludo",
+        "ciudad": "Bogotá",
+        "localidad": "Kennedy",
+        "telefono": "6014567712",
+        "correo": "adopciones@hogarpeludo.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.1459,
+          4.621
+        ]
+      }
+    },
+    {
+      "nombre": "Kala",
+      "especie": "gato",
+      "raza": "Bengalí mestiza",
+      "sexo": "hembra",
+      "edad_meses": 12,
+      "tamano": "pequeno",
+      "descripcion": "Kala es muy activa, le gusta trepar y explorar. Necesita rascadores, juego diario y ventanas con malla de seguridad.",
+      "temperamento": [
+        "activo",
+        "independiente"
+      ],
+      "fotos": [
+        "https://cdn2.thecatapi.com/images/4-5SzDNIL.jpg"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "usa_arenero": true,
+        "apto_con_perros": false,
+        "apto_con_ninos": true,
+        "solo_interior": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a532cd468a1e77642"
+          },
+          "fecha": {
+            "$date": "2026-10-22T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización. Recuperación completa.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a92ca82bc3733323c"
+          },
+          "fecha": {
+            "$date": "2026-10-03T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna triple felina (rinotraqueítis, calicivirus, panleucopenia).",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0accd138cddfb87714"
+          },
+          "fecha": {
+            "$date": "2026-09-17T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna y aplicación de pipeta antipulgas.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a57a0d217bdc7561f"
+          },
+          "fecha": {
+            "$date": "2026-09-12T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso. Prueba de leucemia e inmunodeficiencia felina negativa.",
+          "veterinario": "Dr. Julián Restrepo"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-11-12T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000018"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000003"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000003"
+        },
+        "nombre": "Fundación Hogar Peludo",
+        "ciudad": "Bogotá",
+        "localidad": "Kennedy",
+        "telefono": "6014567712",
+        "correo": "adopciones@hogarpeludo.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.1529,
+          4.625
+        ]
+      }
+    },
+    {
+      "nombre": "Toño",
+      "especie": "perro",
+      "raza": "Mestizo",
+      "sexo": "macho",
+      "edad_meses": 132,
+      "tamano": "mediano",
+      "descripcion": "Toño tiene once años y una calma contagiosa. Busca un hogar donde pasar su vejez con paseos cortos, una cama cómoda y mucha compañía.",
+      "temperamento": [
+        "tranquilo",
+        "carinoso"
+      ],
+      "fotos": [
+        "https://images.dog.ceo/breeds/mix/floki-the-chilean-mutt-8.jpg"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "nivel_energia": "bajo",
+        "necesita_patio": false,
+        "apto_con_ninos": true,
+        "apto_con_gatos": true,
+        "entrenado": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0acd65de5081618134"
+          },
+          "fecha": {
+            "$date": "2026-11-06T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Control geriátrico: exámenes de sangre dentro de parámetros normales.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0abc02706db4e11a65"
+          },
+          "fecha": {
+            "$date": "2026-10-17T02:31:38.285Z"
+          },
+          "tipo": "tratamiento",
+          "descripcion": "Suplemento articular (glucosamina) de uso diario por artrosis leve.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0aed2b9c1af309a658"
+          },
+          "fecha": {
+            "$date": "2026-06-04T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización sin complicaciones. Retiro de puntos a los 10 días.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0acae4caf611910921"
+          },
+          "fecha": {
+            "$date": "2026-05-20T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna antirrábica. Próximo refuerzo en un año.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a04ccfdd793369e66"
+          },
+          "fecha": {
+            "$date": "2026-05-04T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna múltiple (moquillo, parvovirus, hepatitis, leptospira).",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a75960d32d9489a53"
+          },
+          "fecha": {
+            "$date": "2026-04-27T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna (praziquantel y pirantel) y externa.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0aef319a80a275416d"
+          },
+          "fecha": {
+            "$date": "2026-04-20T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso: condición corporal adecuada, sin signos de enfermedad.",
+          "veterinario": "Dra. Carolina Méndez"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-10-12T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000019"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000004"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000004"
+        },
+        "nombre": "Albergue Segunda Oportunidad",
+        "ciudad": "Bogotá",
+        "localidad": "Usaquén",
+        "telefono": "6016238844",
+        "correo": "info@segundaoportunidad.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.028,
+          4.693
+        ]
+      }
+    },
+    {
+      "nombre": "Dalí",
+      "especie": "gato",
+      "raza": "Devon rex",
+      "sexo": "macho",
+      "edad_meses": 108,
+      "tamano": "pequeno",
+      "descripcion": "Dalí es un gato senior tranquilo que disfruta dormir al sol. Fue entregado cuando su tutora se mudó al exterior. Se adapta bien a apartamentos.",
+      "temperamento": [
+        "tranquilo",
+        "independiente"
+      ],
+      "fotos": [
+        "https://cdn2.thecatapi.com/images/5mg.jpg"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "usa_arenero": true,
+        "apto_con_perros": false,
+        "apto_con_ninos": true,
+        "solo_interior": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a7672089553bd6895"
+          },
+          "fecha": {
+            "$date": "2026-11-01T02:31:38.285Z"
+          },
+          "tipo": "cirugia",
+          "descripcion": "Limpieza dental con extracción de dos piezas. Recuperación favorable.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0af2e8b288d023ac50"
+          },
+          "fecha": {
+            "$date": "2026-06-29T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización. Recuperación completa.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a68436788633bd51f"
+          },
+          "fecha": {
+            "$date": "2026-06-10T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna triple felina (rinotraqueítis, calicivirus, panleucopenia).",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a959413996174238b"
+          },
+          "fecha": {
+            "$date": "2026-05-25T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna y aplicación de pipeta antipulgas.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a5c38ba646cb47c73"
+          },
+          "fecha": {
+            "$date": "2026-05-20T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso. Prueba de leucemia e inmunodeficiencia felina negativa.",
+          "veterinario": "Dr. Felipe Ospina"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-10-31T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000020"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000004"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000004"
+        },
+        "nombre": "Albergue Segunda Oportunidad",
+        "ciudad": "Bogotá",
+        "localidad": "Usaquén",
+        "telefono": "6016238844",
+        "correo": "info@segundaoportunidad.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.034,
+          4.698
+        ]
+      }
+    },
+    {
+      "nombre": "Rita",
+      "especie": "perro",
+      "raza": "Poodle toy",
+      "sexo": "hembra",
+      "edad_meses": 108,
+      "tamano": "pequeno",
+      "descripcion": "Rita es tímida con desconocidos, pero muy cariñosa cuando entra en confianza. Ideal para una persona adulta o una pareja que pase tiempo en casa.",
+      "temperamento": [
+        "carinoso",
+        "timido"
+      ],
+      "fotos": [
+        "https://images.dog.ceo/breeds/poodle-toy/n02113624_2521.jpg"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "nivel_energia": "bajo",
+        "necesita_patio": false,
+        "apto_con_ninos": false,
+        "apto_con_gatos": true,
+        "entrenado": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0a523e81d518b55128"
+          },
+          "fecha": {
+            "$date": "2026-07-24T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización sin complicaciones. Retiro de puntos a los 10 días.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a5311438fc5ea26b4"
+          },
+          "fecha": {
+            "$date": "2026-07-09T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna antirrábica. Próximo refuerzo en un año.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0aeb79430a5c7ba874"
+          },
+          "fecha": {
+            "$date": "2026-06-23T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna múltiple (moquillo, parvovirus, hepatitis, leptospira).",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a2d5c58926146a862"
+          },
+          "fecha": {
+            "$date": "2026-06-16T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna (praziquantel y pirantel) y externa.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0acb5037eae2c76d4a"
+          },
+          "fecha": {
+            "$date": "2026-06-09T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso: condición corporal adecuada, sin signos de enfermedad.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-10-24T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000021"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000004"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000004"
+        },
+        "nombre": "Albergue Segunda Oportunidad",
+        "ciudad": "Bogotá",
+        "localidad": "Usaquén",
+        "telefono": "6016238844",
+        "correo": "info@segundaoportunidad.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.026,
+          4.699
+        ]
+      }
+    },
+    {
+      "nombre": "Canelo",
+      "especie": "conejo",
+      "raza": "Belier",
+      "sexo": "macho",
+      "edad_meses": 72,
+      "tamano": "pequeno",
+      "descripcion": "Canelo es un conejo adulto muy calmado. Disfruta las siestas largas y las hojas de cilantro.",
+      "temperamento": [
+        "tranquilo"
+      ],
+      "fotos": [
+        "https://images.unsplash.com/photo-1535241749838-299277b6305f?w=1000&q=70&auto=format&fit=crop"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "usa_arenero": true,
+        "tipo_pelaje": "corto",
+        "apto_con_ninos": true,
+        "requiere_jaula_amplia": false
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0ae1a0b6a1356e8105"
+          },
+          "fecha": {
+            "$date": "2026-09-07T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización realizada por veterinario de exóticos.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0aea29ee3643f19cb4"
+          },
+          "fecha": {
+            "$date": "2026-08-13T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna contra mixomatosis y enfermedad hemorrágica vírica.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0acb8138affba54537"
+          },
+          "fecha": {
+            "$date": "2026-07-29T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna con ivermectina.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0aafccf31e6c09da37"
+          },
+          "fecha": {
+            "$date": "2026-07-19T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Revisión general: dentadura y pelaje en buen estado.",
+          "veterinario": "Dr. Julián Restrepo"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-10-19T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000022"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000004"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000004"
+        },
+        "nombre": "Albergue Segunda Oportunidad",
+        "ciudad": "Bogotá",
+        "localidad": "Usaquén",
+        "telefono": "6016238844",
+        "correo": "info@segundaoportunidad.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.036,
+          4.691
+        ]
+      }
+    },
+    {
+      "nombre": "Greta",
+      "especie": "gato",
+      "raza": "Común europeo atigrado",
+      "sexo": "hembra",
+      "edad_meses": 120,
+      "tamano": "pequeno",
+      "descripcion": "Greta tiene diez años, es cariñosa y muy limpia. Busca un hogar tranquilo donde la dejen dormir en el sofá.",
+      "temperamento": [
+        "tranquilo",
+        "carinoso"
+      ],
+      "fotos": [
+        "https://cdn2.thecatapi.com/images/3mo.jpg"
+      ],
+      "estado": "disponible",
+      "esterilizado": true,
+      "atributos_especie": {
+        "usa_arenero": true,
+        "apto_con_perros": true,
+        "apto_con_ninos": true,
+        "solo_interior": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0ad7c4041b459eb771"
+          },
+          "fecha": {
+            "$date": "2026-06-09T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización. Recuperación completa.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0aaa8ee581db3e6d33"
+          },
+          "fecha": {
+            "$date": "2026-05-21T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna triple felina (rinotraqueítis, calicivirus, panleucopenia).",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0ab07b6514ffa59818"
+          },
+          "fecha": {
+            "$date": "2026-05-05T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna y aplicación de pipeta antipulgas.",
+          "veterinario": "Dra. Carolina Méndez"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0ad93f0d3c78fea64b"
+          },
+          "fecha": {
+            "$date": "2026-04-30T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso. Prueba de leucemia e inmunodeficiencia felina negativa.",
+          "veterinario": "Dra. Carolina Méndez"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-10-05T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000023"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000004"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000004"
+        },
+        "nombre": "Albergue Segunda Oportunidad",
+        "ciudad": "Bogotá",
+        "localidad": "Usaquén",
+        "telefono": "6016238844",
+        "correo": "info@segundaoportunidad.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.029,
+          4.701
+        ]
+      }
+    },
+    {
+      "nombre": "Max",
+      "especie": "perro",
+      "raza": "Golden retriever",
+      "sexo": "macho",
+      "edad_meses": 96,
+      "tamano": "grande",
+      "descripcion": "Max ya está en su nuevo hogar en Cedritos. ¡Gracias a la familia que le dio una segunda oportunidad!",
+      "temperamento": [
+        "tranquilo",
+        "sociable",
+        "carinoso"
+      ],
+      "fotos": [
+        "https://images.dog.ceo/breeds/retriever-golden/n02099601_124.jpg"
+      ],
+      "estado": "adoptada",
+      "esterilizado": true,
+      "atributos_especie": {
+        "nivel_energia": "medio",
+        "necesita_patio": true,
+        "apto_con_ninos": true,
+        "apto_con_gatos": true,
+        "entrenado": true
+      },
+      "historial_medico": [
+        {
+          "_id": {
+            "$oid": "6b079a0aa568e6412f7d59b9"
+          },
+          "fecha": {
+            "$date": "2026-05-15T02:31:38.285Z"
+          },
+          "tipo": "esterilizacion",
+          "descripcion": "Esterilización sin complicaciones. Retiro de puntos a los 10 días.",
+          "veterinario": "Dr. Julián Restrepo"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0ae6e37921462faeda"
+          },
+          "fecha": {
+            "$date": "2026-04-30T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna antirrábica. Próximo refuerzo en un año.",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0afb838dc05bb203b9"
+          },
+          "fecha": {
+            "$date": "2026-04-14T02:31:38.285Z"
+          },
+          "tipo": "vacuna",
+          "descripcion": "Vacuna múltiple (moquillo, parvovirus, hepatitis, leptospira).",
+          "veterinario": "Dra. Ana María Cárdenas"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a2f6be3c235a975a0"
+          },
+          "fecha": {
+            "$date": "2026-04-07T02:31:38.285Z"
+          },
+          "tipo": "desparasitacion",
+          "descripcion": "Desparasitación interna (praziquantel y pirantel) y externa.",
+          "veterinario": "Dr. Felipe Ospina"
+        },
+        {
+          "_id": {
+            "$oid": "6b079a0a0143cc995b0fd43c"
+          },
+          "fecha": {
+            "$date": "2026-03-31T02:31:38.285Z"
+          },
+          "tipo": "consulta",
+          "descripcion": "Valoración de ingreso: condición corporal adecuada, sin signos de enfermedad.",
+          "veterinario": "Dr. Felipe Ospina"
+        }
+      ],
+      "fecha_publicacion": {
+        "$date": "2026-08-28T02:31:38.285Z"
+      },
+      "_id": {
+        "$oid": "6741c3f0e4d3c30000000024"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000004"
+      },
+      "fundacion": {
+        "_id": {
+          "$oid": "6740b2e0d3c2b20000000004"
+        },
+        "nombre": "Albergue Segunda Oportunidad",
+        "ciudad": "Bogotá",
+        "localidad": "Usaquén",
+        "telefono": "6016238844",
+        "correo": "info@segundaoportunidad.org"
+      },
+      "ubicacion": {
+        "type": "Point",
+        "coordinates": [
+          -74.032,
+          4.689
+        ]
+      }
+    }
+  ],
+  "solicitudes": [
+    {
+      "_id": {
+        "$oid": "6b079a0a2151fa0bad7d6444"
+      },
+      "mascota_id": {
+        "$oid": "6741c3f0e4d3c30000000006"
+      },
+      "adoptante_id": {
+        "$oid": "6740a1f0c2b1a10000000005"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000001"
+      },
+      "estado": "pendiente",
+      "mensaje": "Vivo en una finca en La Calera y ya tuve dos huskies. Tengo experiencia con la raza y mucho espacio para que Thor corra.",
+      "mascota": {
+        "nombre": "Thor",
+        "especie": "perro",
+        "foto": "https://images.dog.ceo/breeds/husky/n02110185_3328.jpg"
+      },
+      "fundacion": {
+        "nombre": "Fundación Huellas de Suba"
+      },
+      "adoptante": {
+        "nombre": "Julián Esteban Mora",
+        "correo": "julian.mora@correo.co",
+        "telefono": "3127771234",
+        "ciudad": "Bogotá",
+        "perfil_estilo_vida": {
+          "tipo_vivienda": "finca",
+          "tiene_patio": true,
+          "horas_disponibles": 8,
+          "tiene_ninos": true,
+          "tiene_otras_mascotas": true,
+          "otras_mascotas": [
+            "perro"
+          ],
+          "experiencia_previa": true,
+          "especies_preferidas": [
+            "perro"
+          ],
+          "tamanos_preferidos": [
+            "grande"
+          ],
+          "actualizado_en": {
+            "$date": "2026-11-11T02:31:38.283Z"
+          }
+        }
+      },
+      "historial_estados": [
+        {
+          "estado": "pendiente",
+          "fecha": {
+            "$date": "2026-11-25T02:31:38.314Z"
+          },
+          "nota": "Solicitud enviada por el adoptante."
+        }
+      ],
+      "fecha_creacion": {
+        "$date": "2026-11-25T02:31:38.314Z"
+      },
+      "fecha_actualizacion": {
+        "$date": "2026-11-25T02:31:38.314Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6b079a0acb6b3bdff5b51218"
+      },
+      "mascota_id": {
+        "$oid": "6741c3f0e4d3c30000000002"
+      },
+      "adoptante_id": {
+        "$oid": "6740a1f0c2b1a10000000003"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000001"
+      },
+      "estado": "pendiente",
+      "mensaje": "Tenemos casa con patio grande en Suba y dos hijos de 9 y 12 años que adoran a los perros. Salimos a correr todos los fines de semana.",
+      "mascota": {
+        "nombre": "Rocco",
+        "especie": "perro",
+        "foto": "https://images.dog.ceo/breeds/labrador/labrador_zack_01.jpg"
+      },
+      "fundacion": {
+        "nombre": "Fundación Huellas de Suba"
+      },
+      "adoptante": {
+        "nombre": "Camilo Andrés Pardo",
+        "correo": "camilo.pardo@correo.co",
+        "telefono": "3209876543",
+        "ciudad": "Bogotá",
+        "perfil_estilo_vida": {
+          "tipo_vivienda": "casa",
+          "tiene_patio": true,
+          "horas_disponibles": 6,
+          "tiene_ninos": true,
+          "tiene_otras_mascotas": false,
+          "otras_mascotas": [],
+          "experiencia_previa": true,
+          "especies_preferidas": [
+            "perro"
+          ],
+          "tamanos_preferidos": [
+            "mediano",
+            "grande"
+          ],
+          "actualizado_en": {
+            "$date": "2026-11-06T02:31:38.283Z"
+          }
+        }
+      },
+      "historial_estados": [
+        {
+          "estado": "pendiente",
+          "fecha": {
+            "$date": "2026-11-24T02:31:38.314Z"
+          },
+          "nota": "Solicitud enviada por el adoptante."
+        }
+      ],
+      "fecha_creacion": {
+        "$date": "2026-11-24T02:31:38.314Z"
+      },
+      "fecha_actualizacion": {
+        "$date": "2026-11-24T02:31:38.314Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6b079a0a640e174121928d8f"
+      },
+      "mascota_id": {
+        "$oid": "6741c3f0e4d3c30000000009"
+      },
+      "adoptante_id": {
+        "$oid": "6740a1f0c2b1a10000000002"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000002"
+      },
+      "estado": "pendiente",
+      "mensaje": "Hola, vivo sola en un apartamento en Chapinero y trabajo desde casa la mayor parte de la semana. Tengo una gata adulta muy tranquila y creo que Kiara se adaptaría bien a nuestro ritmo.",
+      "mascota": {
+        "nombre": "Kiara",
+        "especie": "perro",
+        "foto": "https://images.dog.ceo/breeds/dachshund/reese.jpg"
+      },
+      "fundacion": {
+        "nombre": "Refugio Patitas de Chapinero"
+      },
+      "adoptante": {
+        "nombre": "Laura Gómez Rincón",
+        "correo": "adoptante@mimascota.co",
+        "telefono": "3104567890",
+        "ciudad": "Bogotá",
+        "perfil_estilo_vida": {
+          "tipo_vivienda": "apartamento",
+          "tiene_patio": false,
+          "horas_disponibles": 4,
+          "tiene_ninos": false,
+          "tiene_otras_mascotas": true,
+          "otras_mascotas": [
+            "gato"
+          ],
+          "experiencia_previa": true,
+          "especies_preferidas": [
+            "perro",
+            "gato"
+          ],
+          "tamanos_preferidos": [
+            "pequeno",
+            "mediano"
+          ],
+          "actualizado_en": {
+            "$date": "2026-11-14T02:31:38.283Z"
+          }
+        }
+      },
+      "historial_estados": [
+        {
+          "estado": "pendiente",
+          "fecha": {
+            "$date": "2026-11-23T02:31:38.314Z"
+          },
+          "nota": "Solicitud enviada por el adoptante."
+        }
+      ],
+      "fecha_creacion": {
+        "$date": "2026-11-23T02:31:38.314Z"
+      },
+      "fecha_actualizacion": {
+        "$date": "2026-11-23T02:31:38.314Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6b079a0a216eeb611d6c0da5"
+      },
+      "mascota_id": {
+        "$oid": "6741c3f0e4d3c30000000016"
+      },
+      "adoptante_id": {
+        "$oid": "6740a1f0c2b1a10000000005"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000003"
+      },
+      "estado": "pendiente",
+      "mensaje": "Me interesa Tango como compañero para mi perra, que es muy sociable.",
+      "mascota": {
+        "nombre": "Tango",
+        "especie": "perro",
+        "foto": "https://images.dog.ceo/breeds/mix/xeshabelka_%2835%29.jpg"
+      },
+      "fundacion": {
+        "nombre": "Fundación Hogar Peludo"
+      },
+      "adoptante": {
+        "nombre": "Julián Esteban Mora",
+        "correo": "julian.mora@correo.co",
+        "telefono": "3127771234",
+        "ciudad": "Bogotá",
+        "perfil_estilo_vida": {
+          "tipo_vivienda": "finca",
+          "tiene_patio": true,
+          "horas_disponibles": 8,
+          "tiene_ninos": true,
+          "tiene_otras_mascotas": true,
+          "otras_mascotas": [
+            "perro"
+          ],
+          "experiencia_previa": true,
+          "especies_preferidas": [
+            "perro"
+          ],
+          "tamanos_preferidos": [
+            "grande"
+          ],
+          "actualizado_en": {
+            "$date": "2026-11-11T02:31:38.283Z"
+          }
+        }
+      },
+      "historial_estados": [
+        {
+          "estado": "pendiente",
+          "fecha": {
+            "$date": "2026-11-22T02:31:38.314Z"
+          },
+          "nota": "Solicitud enviada por el adoptante."
+        }
+      ],
+      "fecha_creacion": {
+        "$date": "2026-11-22T02:31:38.314Z"
+      },
+      "fecha_actualizacion": {
+        "$date": "2026-11-22T02:31:38.314Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6b079a0ae8cb64ae0084eeac"
+      },
+      "mascota_id": {
+        "$oid": "6741c3f0e4d3c30000000004"
+      },
+      "adoptante_id": {
+        "$oid": "6740a1f0c2b1a10000000004"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000001"
+      },
+      "estado": "pendiente",
+      "mensaje": "Soy estudiante de posgrado y paso muchas horas en casa. Luna parece ideal para un hogar tranquilo sin niños como el mío.",
+      "mascota": {
+        "nombre": "Luna",
+        "especie": "gato",
+        "foto": "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=1000&q=70&auto=format&fit=crop"
+      },
+      "fundacion": {
+        "nombre": "Fundación Huellas de Suba"
+      },
+      "adoptante": {
+        "nombre": "Valentina Ríos Castaño",
+        "correo": "valentina.rios@correo.co",
+        "telefono": "3015558822",
+        "ciudad": "Bogotá",
+        "perfil_estilo_vida": {
+          "tipo_vivienda": "apartamento",
+          "tiene_patio": false,
+          "horas_disponibles": 3,
+          "tiene_ninos": false,
+          "tiene_otras_mascotas": false,
+          "otras_mascotas": [],
+          "experiencia_previa": false,
+          "especies_preferidas": [
+            "gato",
+            "conejo"
+          ],
+          "tamanos_preferidos": [
+            "pequeno"
+          ],
+          "actualizado_en": {
+            "$date": "2026-11-18T02:31:38.283Z"
+          }
+        }
+      },
+      "historial_estados": [
+        {
+          "estado": "pendiente",
+          "fecha": {
+            "$date": "2026-11-21T02:31:38.314Z"
+          },
+          "nota": "Solicitud enviada por el adoptante."
+        }
+      ],
+      "fecha_creacion": {
+        "$date": "2026-11-21T02:31:38.314Z"
+      },
+      "fecha_actualizacion": {
+        "$date": "2026-11-21T02:31:38.314Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6b079a0a5e1d4e272e9bd734"
+      },
+      "mascota_id": {
+        "$oid": "6741c3f0e4d3c30000000016"
+      },
+      "adoptante_id": {
+        "$oid": "6740a1f0c2b1a10000000003"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000003"
+      },
+      "estado": "pendiente",
+      "mensaje": "Tango sería perfecto para jugar con mis hijos en el patio. Podemos ir a conocerlo este sábado.",
+      "mascota": {
+        "nombre": "Tango",
+        "especie": "perro",
+        "foto": "https://images.dog.ceo/breeds/mix/xeshabelka_%2835%29.jpg"
+      },
+      "fundacion": {
+        "nombre": "Fundación Hogar Peludo"
+      },
+      "adoptante": {
+        "nombre": "Camilo Andrés Pardo",
+        "correo": "camilo.pardo@correo.co",
+        "telefono": "3209876543",
+        "ciudad": "Bogotá",
+        "perfil_estilo_vida": {
+          "tipo_vivienda": "casa",
+          "tiene_patio": true,
+          "horas_disponibles": 6,
+          "tiene_ninos": true,
+          "tiene_otras_mascotas": false,
+          "otras_mascotas": [],
+          "experiencia_previa": true,
+          "especies_preferidas": [
+            "perro"
+          ],
+          "tamanos_preferidos": [
+            "mediano",
+            "grande"
+          ],
+          "actualizado_en": {
+            "$date": "2026-11-06T02:31:38.283Z"
+          }
+        }
+      },
+      "historial_estados": [
+        {
+          "estado": "pendiente",
+          "fecha": {
+            "$date": "2026-11-20T02:31:38.314Z"
+          },
+          "nota": "Solicitud enviada por el adoptante."
+        }
+      ],
+      "fecha_creacion": {
+        "$date": "2026-11-20T02:31:38.314Z"
+      },
+      "fecha_actualizacion": {
+        "$date": "2026-11-20T02:31:38.314Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6b079a0aa7afe37a82aab682"
+      },
+      "mascota_id": {
+        "$oid": "6741c3f0e4d3c30000000002"
+      },
+      "adoptante_id": {
+        "$oid": "6740a1f0c2b1a10000000002"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000001"
+      },
+      "estado": "rechazada",
+      "mensaje": "Rocco me pareció un perro muy alegre, me gustaría conocerlo y saber si podría vivir conmigo.",
+      "mascota": {
+        "nombre": "Rocco",
+        "especie": "perro",
+        "foto": "https://images.dog.ceo/breeds/labrador/labrador_zack_01.jpg"
+      },
+      "fundacion": {
+        "nombre": "Fundación Huellas de Suba"
+      },
+      "adoptante": {
+        "nombre": "Laura Gómez Rincón",
+        "correo": "adoptante@mimascota.co",
+        "telefono": "3104567890",
+        "ciudad": "Bogotá",
+        "perfil_estilo_vida": {
+          "tipo_vivienda": "apartamento",
+          "tiene_patio": false,
+          "horas_disponibles": 4,
+          "tiene_ninos": false,
+          "tiene_otras_mascotas": true,
+          "otras_mascotas": [
+            "gato"
+          ],
+          "experiencia_previa": true,
+          "especies_preferidas": [
+            "perro",
+            "gato"
+          ],
+          "tamanos_preferidos": [
+            "pequeno",
+            "mediano"
+          ],
+          "actualizado_en": {
+            "$date": "2026-11-14T02:31:38.283Z"
+          }
+        }
+      },
+      "historial_estados": [
+        {
+          "estado": "pendiente",
+          "fecha": {
+            "$date": "2026-11-12T02:31:38.314Z"
+          },
+          "nota": "Solicitud enviada por el adoptante."
+        },
+        {
+          "estado": "rechazada",
+          "fecha": {
+            "$date": "2026-11-15T02:31:38.314Z"
+          },
+          "nota": "Rocco necesita una casa con patio y no convive con gatos. Le sugerimos revisar a Canela o a Kiara."
+        }
+      ],
+      "fecha_creacion": {
+        "$date": "2026-11-12T02:31:38.314Z"
+      },
+      "fecha_actualizacion": {
+        "$date": "2026-11-15T02:31:38.314Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6b079a0ad5631ac077c5abd4"
+      },
+      "mascota_id": {
+        "$oid": "6741c3f0e4d3c30000000012"
+      },
+      "adoptante_id": {
+        "$oid": "6740a1f0c2b1a10000000002"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000002"
+      },
+      "estado": "aprobada",
+      "mensaje": "Me encantaría darle un hogar a Frida. Ya tuve gatos durante diez años y tengo malla de seguridad en todas las ventanas.",
+      "mascota": {
+        "nombre": "Frida",
+        "especie": "gato",
+        "foto": "https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=1000&q=70&auto=format&fit=crop"
+      },
+      "fundacion": {
+        "nombre": "Refugio Patitas de Chapinero"
+      },
+      "adoptante": {
+        "nombre": "Laura Gómez Rincón",
+        "correo": "adoptante@mimascota.co",
+        "telefono": "3104567890",
+        "ciudad": "Bogotá",
+        "perfil_estilo_vida": {
+          "tipo_vivienda": "apartamento",
+          "tiene_patio": false,
+          "horas_disponibles": 4,
+          "tiene_ninos": false,
+          "tiene_otras_mascotas": true,
+          "otras_mascotas": [
+            "gato"
+          ],
+          "experiencia_previa": true,
+          "especies_preferidas": [
+            "perro",
+            "gato"
+          ],
+          "tamanos_preferidos": [
+            "pequeno",
+            "mediano"
+          ],
+          "actualizado_en": {
+            "$date": "2026-11-14T02:31:38.283Z"
+          }
+        }
+      },
+      "historial_estados": [
+        {
+          "estado": "pendiente",
+          "fecha": {
+            "$date": "2026-11-02T02:31:38.314Z"
+          },
+          "nota": "Solicitud enviada por el adoptante."
+        },
+        {
+          "estado": "aprobada",
+          "fecha": {
+            "$date": "2026-11-08T02:31:38.314Z"
+          },
+          "nota": "Aprobada. Nos comunicaremos para coordinar la visita y la entrega."
+        }
+      ],
+      "fecha_creacion": {
+        "$date": "2026-11-02T02:31:38.314Z"
+      },
+      "fecha_actualizacion": {
+        "$date": "2026-11-08T02:31:38.314Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6b079a0a4412c6711910ec7e"
+      },
+      "mascota_id": {
+        "$oid": "6741c3f0e4d3c30000000012"
+      },
+      "adoptante_id": {
+        "$oid": "6740a1f0c2b1a10000000004"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000002"
+      },
+      "estado": "rechazada",
+      "mensaje": "Frida sería mi primera gata. Vivo con mi pareja en un apartamento tranquilo.",
+      "mascota": {
+        "nombre": "Frida",
+        "especie": "gato",
+        "foto": "https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=1000&q=70&auto=format&fit=crop"
+      },
+      "fundacion": {
+        "nombre": "Refugio Patitas de Chapinero"
+      },
+      "adoptante": {
+        "nombre": "Valentina Ríos Castaño",
+        "correo": "valentina.rios@correo.co",
+        "telefono": "3015558822",
+        "ciudad": "Bogotá",
+        "perfil_estilo_vida": {
+          "tipo_vivienda": "apartamento",
+          "tiene_patio": false,
+          "horas_disponibles": 3,
+          "tiene_ninos": false,
+          "tiene_otras_mascotas": false,
+          "otras_mascotas": [],
+          "experiencia_previa": false,
+          "especies_preferidas": [
+            "gato",
+            "conejo"
+          ],
+          "tamanos_preferidos": [
+            "pequeno"
+          ],
+          "actualizado_en": {
+            "$date": "2026-11-18T02:31:38.283Z"
+          }
+        }
+      },
+      "historial_estados": [
+        {
+          "estado": "pendiente",
+          "fecha": {
+            "$date": "2026-11-04T02:31:38.314Z"
+          },
+          "nota": "Solicitud enviada por el adoptante."
+        },
+        {
+          "estado": "rechazada",
+          "fecha": {
+            "$date": "2026-11-08T02:31:38.314Z"
+          },
+          "nota": "Rechazada automáticamente: se aprobó otra solicitud para esta mascota."
+        }
+      ],
+      "fecha_creacion": {
+        "$date": "2026-11-04T02:31:38.314Z"
+      },
+      "fecha_actualizacion": {
+        "$date": "2026-11-08T02:31:38.314Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "6b079a0a148a3b2280babda6"
+      },
+      "mascota_id": {
+        "$oid": "6741c3f0e4d3c30000000024"
+      },
+      "adoptante_id": {
+        "$oid": "6740a1f0c2b1a10000000005"
+      },
+      "fundacion_id": {
+        "$oid": "6740b2e0d3c2b20000000004"
+      },
+      "estado": "aprobada",
+      "mensaje": "Busco un perro tranquilo que acompañe a mis papás en la finca.",
+      "mascota": {
+        "nombre": "Max",
+        "especie": "perro",
+        "foto": "https://images.dog.ceo/breeds/retriever-golden/n02099601_124.jpg"
+      },
+      "fundacion": {
+        "nombre": "Albergue Segunda Oportunidad"
+      },
+      "adoptante": {
+        "nombre": "Julián Esteban Mora",
+        "correo": "julian.mora@correo.co",
+        "telefono": "3127771234",
+        "ciudad": "Bogotá",
+        "perfil_estilo_vida": {
+          "tipo_vivienda": "finca",
+          "tiene_patio": true,
+          "horas_disponibles": 8,
+          "tiene_ninos": true,
+          "tiene_otras_mascotas": true,
+          "otras_mascotas": [
+            "perro"
+          ],
+          "experiencia_previa": true,
+          "especies_preferidas": [
+            "perro"
+          ],
+          "tamanos_preferidos": [
+            "grande"
+          ],
+          "actualizado_en": {
+            "$date": "2026-11-11T02:31:38.283Z"
+          }
+        }
+      },
+      "historial_estados": [
+        {
+          "estado": "pendiente",
+          "fecha": {
+            "$date": "2026-10-17T02:31:38.314Z"
+          },
+          "nota": "Solicitud enviada por el adoptante."
+        },
+        {
+          "estado": "aprobada",
+          "fecha": {
+            "$date": "2026-10-22T02:31:38.314Z"
+          },
+          "nota": "Aprobada. Entrega realizada."
+        }
+      ],
+      "fecha_creacion": {
+        "$date": "2026-10-17T02:31:38.314Z"
+      },
+      "fecha_actualizacion": {
+        "$date": "2026-10-22T02:31:38.314Z"
+      }
+    }
+  ],
+  "notificaciones": [
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000011"
+      },
+      "tipo": "solicitud_recibida",
+      "titulo": "Nueva solicitud de adopción",
+      "mensaje": "Julián Esteban Mora quiere adoptar a Thor.",
+      "enlace": "/fundacion/solicitudes",
+      "fecha": {
+        "$date": "2026-11-25T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a459857ffae5d67b8"
+      },
+      "leida": false
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000001"
+      },
+      "tipo": "fundacion_pendiente",
+      "titulo": "Fundación pendiente de validación",
+      "mensaje": "Fundación Ronroneos de Engativá (NIT 901.678.234-5) se registró y espera la verificación de sus datos.",
+      "enlace": "/admin/fundaciones",
+      "fecha": {
+        "$date": "2026-11-24T21:31:38.283Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a3dbe8cd10181fb60"
+      },
+      "leida": false
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000011"
+      },
+      "tipo": "solicitud_recibida",
+      "titulo": "Nueva solicitud de adopción",
+      "mensaje": "Camilo Andrés Pardo quiere adoptar a Rocco.",
+      "enlace": "/fundacion/solicitudes",
+      "fecha": {
+        "$date": "2026-11-24T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0aadb434a9f49364f2"
+      },
+      "leida": false
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000012"
+      },
+      "tipo": "solicitud_recibida",
+      "titulo": "Nueva solicitud de adopción",
+      "mensaje": "Laura Gómez Rincón quiere adoptar a Kiara.",
+      "enlace": "/fundacion/solicitudes",
+      "fecha": {
+        "$date": "2026-11-23T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a498d25362d83fa33"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000001"
+      },
+      "tipo": "fundacion_pendiente",
+      "titulo": "Fundación pendiente de validación",
+      "mensaje": "Colectivo Bigotes de Teusaquillo (NIT 901.778.345-6) se registró y espera la verificación de sus datos.",
+      "enlace": "/admin/fundaciones",
+      "fecha": {
+        "$date": "2026-11-23T02:31:38.283Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a8e150b6cf0a4749e"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000013"
+      },
+      "tipo": "solicitud_recibida",
+      "titulo": "Nueva solicitud de adopción",
+      "mensaje": "Julián Esteban Mora quiere adoptar a Tango.",
+      "enlace": "/fundacion/solicitudes",
+      "fecha": {
+        "$date": "2026-11-22T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a2b382172ca76affd"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000011"
+      },
+      "tipo": "solicitud_recibida",
+      "titulo": "Nueva solicitud de adopción",
+      "mensaje": "Valentina Ríos Castaño quiere adoptar a Luna.",
+      "enlace": "/fundacion/solicitudes",
+      "fecha": {
+        "$date": "2026-11-21T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a9394698b8bb5f0d3"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000013"
+      },
+      "tipo": "solicitud_recibida",
+      "titulo": "Nueva solicitud de adopción",
+      "mensaje": "Camilo Andrés Pardo quiere adoptar a Tango.",
+      "enlace": "/fundacion/solicitudes",
+      "fecha": {
+        "$date": "2026-11-20T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a8d7e379c86d1c236"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000002"
+      },
+      "tipo": "solicitud_rechazada",
+      "titulo": "Solicitud no aprobada",
+      "mensaje": "Fundación Huellas de Suba revisó su solicitud para Rocco. Consulte el motivo en sus solicitudes.",
+      "enlace": "/adoptante/solicitudes",
+      "fecha": {
+        "$date": "2026-11-15T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0ac938e75c29781c17"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000011"
+      },
+      "tipo": "solicitud_recibida",
+      "titulo": "Nueva solicitud de adopción",
+      "mensaje": "Laura Gómez Rincón quiere adoptar a Rocco.",
+      "enlace": "/fundacion/solicitudes",
+      "fecha": {
+        "$date": "2026-11-12T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0ab8c769b03a1f24ef"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000002"
+      },
+      "tipo": "solicitud_aprobada",
+      "titulo": "¡Su solicitud fue aprobada!",
+      "mensaje": "Refugio Patitas de Chapinero aprobó su solicitud para adoptar a Frida.",
+      "enlace": "/adoptante/solicitudes",
+      "fecha": {
+        "$date": "2026-11-08T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a511a36e6811b3c22"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000004"
+      },
+      "tipo": "solicitud_rechazada",
+      "titulo": "Solicitud no aprobada",
+      "mensaje": "Refugio Patitas de Chapinero revisó su solicitud para Frida. Consulte el motivo en sus solicitudes.",
+      "enlace": "/adoptante/solicitudes",
+      "fecha": {
+        "$date": "2026-11-08T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a603bc5083adaf150"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000012"
+      },
+      "tipo": "solicitud_recibida",
+      "titulo": "Nueva solicitud de adopción",
+      "mensaje": "Valentina Ríos Castaño quiere adoptar a Frida.",
+      "enlace": "/fundacion/solicitudes",
+      "fecha": {
+        "$date": "2026-11-04T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0ac38b35c8b7d51994"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000016"
+      },
+      "tipo": "fundacion_rechazada",
+      "titulo": "Registro de fundación rechazado",
+      "mensaje": "El administrador no aprobó el registro de Refugio Animal del Sur. Consulte el motivo en su panel.",
+      "enlace": "/fundacion",
+      "fecha": {
+        "$date": "2026-11-04T02:31:38.283Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a8b82e88e8111ac6a"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000012"
+      },
+      "tipo": "solicitud_recibida",
+      "titulo": "Nueva solicitud de adopción",
+      "mensaje": "Laura Gómez Rincón quiere adoptar a Frida.",
+      "enlace": "/fundacion/solicitudes",
+      "fecha": {
+        "$date": "2026-11-02T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0aec4b587e1aa0d69e"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000001"
+      },
+      "tipo": "fundacion_pendiente",
+      "titulo": "Fundación pendiente de validación",
+      "mensaje": "Refugio Animal del Sur (NIT 900.123.456-1) se registró y espera la verificación de sus datos.",
+      "enlace": "/admin/fundaciones",
+      "fecha": {
+        "$date": "2026-11-01T02:31:38.283Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a21e4b4836ae0ca6f"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000005"
+      },
+      "tipo": "solicitud_aprobada",
+      "titulo": "¡Su solicitud fue aprobada!",
+      "mensaje": "Albergue Segunda Oportunidad aprobó su solicitud para adoptar a Max.",
+      "enlace": "/adoptante/solicitudes",
+      "fecha": {
+        "$date": "2026-10-22T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0ade5bf1c87283f80f"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000014"
+      },
+      "tipo": "solicitud_recibida",
+      "titulo": "Nueva solicitud de adopción",
+      "mensaje": "Julián Esteban Mora quiere adoptar a Max.",
+      "enlace": "/fundacion/solicitudes",
+      "fecha": {
+        "$date": "2026-10-17T02:31:38.314Z"
+      },
+      "_id": {
+        "$oid": "6b079a0af7cb691b806ec895"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000014"
+      },
+      "tipo": "fundacion_aprobada",
+      "titulo": "¡Su fundación fue aprobada!",
+      "mensaje": "Albergue Segunda Oportunidad ya puede publicar mascotas y gestionar solicitudes de adopción.",
+      "enlace": "/fundacion",
+      "fecha": {
+        "$date": "2026-08-26T02:31:38.283Z"
+      },
+      "_id": {
+        "$oid": "6b079a0ad93927a5adb0bca0"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000001"
+      },
+      "tipo": "fundacion_pendiente",
+      "titulo": "Fundación pendiente de validación",
+      "mensaje": "Albergue Segunda Oportunidad (NIT 900.998.112-3) se registró y espera la verificación de sus datos.",
+      "enlace": "/admin/fundaciones",
+      "fecha": {
+        "$date": "2026-08-23T02:31:38.283Z"
+      },
+      "_id": {
+        "$oid": "6b079a0acca4bbb30557a2b0"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000013"
+      },
+      "tipo": "fundacion_aprobada",
+      "titulo": "¡Su fundación fue aprobada!",
+      "mensaje": "Fundación Hogar Peludo ya puede publicar mascotas y gestionar solicitudes de adopción.",
+      "enlace": "/fundacion",
+      "fecha": {
+        "$date": "2026-08-10T02:31:38.283Z"
+      },
+      "_id": {
+        "$oid": "6b079a0aa7a22121e3f12fa6"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000001"
+      },
+      "tipo": "fundacion_pendiente",
+      "titulo": "Fundación pendiente de validación",
+      "mensaje": "Fundación Hogar Peludo (NIT 901.556.789-0) se registró y espera la verificación de sus datos.",
+      "enlace": "/admin/fundaciones",
+      "fecha": {
+        "$date": "2026-08-08T02:31:38.283Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a45a0d8330d3ec07d"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000012"
+      },
+      "tipo": "fundacion_aprobada",
+      "titulo": "¡Su fundación fue aprobada!",
+      "mensaje": "Refugio Patitas de Chapinero ya puede publicar mascotas y gestionar solicitudes de adopción.",
+      "enlace": "/fundacion",
+      "fecha": {
+        "$date": "2026-07-12T02:31:38.283Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a1632e7bcb72248aa"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000001"
+      },
+      "tipo": "fundacion_pendiente",
+      "titulo": "Fundación pendiente de validación",
+      "mensaje": "Refugio Patitas de Chapinero (NIT 900.876.432-5) se registró y espera la verificación de sus datos.",
+      "enlace": "/admin/fundaciones",
+      "fecha": {
+        "$date": "2026-07-09T02:31:38.283Z"
+      },
+      "_id": {
+        "$oid": "6b079a0a71038074c05cf2cb"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000011"
+      },
+      "tipo": "fundacion_aprobada",
+      "titulo": "¡Su fundación fue aprobada!",
+      "mensaje": "Fundación Huellas de Suba ya puede publicar mascotas y gestionar solicitudes de adopción.",
+      "enlace": "/fundacion",
+      "fecha": {
+        "$date": "2026-07-01T02:31:38.283Z"
+      },
+      "_id": {
+        "$oid": "6b079a0ada490b930192b532"
+      },
+      "leida": true
+    },
+    {
+      "usuario_id": {
+        "$oid": "6740a1f0c2b1a10000000001"
+      },
+      "tipo": "fundacion_pendiente",
+      "titulo": "Fundación pendiente de validación",
+      "mensaje": "Fundación Huellas de Suba (NIT 901.234.567-1) se registró y espera la verificación de sus datos.",
+      "enlace": "/admin/fundaciones",
+      "fecha": {
+        "$date": "2026-06-29T02:31:38.283Z"
+      },
+      "_id": {
+        "$oid": "6b079a0abdde50b8084d30c4"
+      },
+      "leida": true
+    }
+  ]
+}

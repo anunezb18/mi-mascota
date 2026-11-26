@@ -20,7 +20,7 @@ export interface MockDb {
 }
 
 /** Cambiar la versión invalida los datos guardados y vuelve a sembrar. */
-const STORAGE_KEY = "mimascota.mockdb.v4";
+const STORAGE_KEY = "mimascota.mockdb.v5";
 
 function seed(): MockDb {
   const usuarios = seedUsuarios();

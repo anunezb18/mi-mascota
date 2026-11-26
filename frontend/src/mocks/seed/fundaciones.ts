@@ -95,7 +95,7 @@ export const seedFundaciones = (): Fundacion[] => [
     _id: ID.fundRefugioSur,
     usuario_id: ID.usuarioRefugioSur,
     nombre: "Refugio Animal del Sur",
-    nit: "123",
+    nit: "900.123.456-1",
     descripcion: "Refugio para animales.",
     direccion: "Sin dirección registrada",
     ciudad: "Bogotá",
@@ -104,7 +104,7 @@ export const seedFundaciones = (): Fundacion[] => [
     correo: "refugiodelsur@correo.co",
     estado_validacion: "rechazada",
     motivo_rechazo:
-      "El NIT registrado no es válido y no se adjuntó una dirección verificable. Puede registrarse nuevamente con la información corregida.",
+      "El dígito de verificación del NIT no corresponde (debería ser 8) y no se adjuntó una dirección verificable. Puede registrarse nuevamente con la información corregida.",
     fecha_registro: daysAgo(25),
     fecha_validacion: daysAgo(22),
   },

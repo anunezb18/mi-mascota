@@ -28,7 +28,9 @@ export default function CatalogPage() {
   const total = query.data?.length ?? 0;
   const resultsLabel = query.isPending
     ? "Buscando mascotas…"
-    : `${total} ${total === 1 ? "mascota encontrada" : "mascotas encontradas"}`;
+    : query.isError
+      ? "Sin resultados"
+      : `${total} ${total === 1 ? "mascota encontrada" : "mascotas encontradas"}`;
 
   return (
     <div className="page">
