@@ -1,43 +1,200 @@
-/* Estilos base. TODO: definir la identidad visual del proyecto. */
-:root {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  color: #1f2937;
-  background: #f9fafb;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Tokens semánticos del sistema de diseño (formato HSL sin envoltura para
+ * poder aplicar opacidad desde Tailwind: bg-primary/10).
+ * Las paletas completas (terracota, pino, arena) viven en tailwind.config.ts.
+ */
+@layer base {
+  :root {
+    --background: 34 47% 97%; /* arena-50 */
+    --foreground: 21 20% 14%; /* arena-900 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 21 20% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 21 20% 14%;
+
+    --primary: 16 73% 42%; /* terracota-600 */
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 21 81% 92%; /* terracota-100 */
+
+    --secondary: 170 43% 28%; /* pino-600 */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-soft: 165 33% 88%; /* pino-100 */
+
+    --muted: 35 33% 93%;
+    --muted-foreground: 23 10% 39%;
+
+    --accent: 35 41% 94%;
+    --accent-foreground: 21 20% 14%;
+
+    --success: 145 45% 34%;
+    --success-foreground: 0 0% 100%;
+    --success-soft: 145 45% 92%;
+
+    --warning: 36 92% 33%;
+    --warning-foreground: 0 0% 100%;
+    --warning-soft: 40 90% 92%;
+
+    --destructive: 6 63% 46%;
+    --destructive-foreground: 0 0% 100%;
+    --destructive-soft: 6 75% 94%;
+
+    --info: 211 61% 43%;
+    --info-foreground: 0 0% 100%;
+    --info-soft: 211 70% 94%;
+
+    --border: 35 28% 87%;
+    --input: 35 22% 80%;
+    --ring: 16 73% 42%;
+
+    --radius: 0.875rem;
+
+    /* Altura del navbar, usada por layouts con elementos sticky */
+    --navbar-height: 4rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+    font-feature-settings: "ss01", "cv11";
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display text-balance;
+    font-optical-sizing: auto;
+    font-variation-settings: "SOFT" 50, "WONK" 0;
+  }
+
+  ::selection {
+    @apply bg-terracota-200 text-terracota-950;
+  }
+
+  /* Anillo de foco visible y consistente para navegación con teclado */
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* Contenedores que reciben el foco por programa (paneles, popovers, main): sin anillo */
+  [tabindex="-1"]:focus-visible {
+    @apply ring-0 ring-offset-0;
+  }
 }
 
-body {
-  margin: 0;
+@layer components {
+  /* Contenedor de página con espaciado vertical estándar */
+  .page {
+    @apply container py-8 md:py-12;
+  }
+
+  /* Enlace para saltar al contenido principal (accesibilidad) */
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-card focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:shadow-overlay;
+  }
+
+  /* Textura sutil de puntos para fondos de secciones destacadas */
+  .bg-dots {
+    background-image: radial-gradient(hsl(var(--foreground) / 0.07) 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1.5rem 1rem;
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
 }
 
-.navbar {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
+/* Ajustes de Leaflet para que respete el sistema de diseño */
+.leaflet-container {
+  @apply font-sans;
+  background: hsl(var(--muted));
+}
+.leaflet-popup-content-wrapper {
+  @apply rounded-xl shadow-overlay;
+}
+.leaflet-popup-content {
+  margin: 0.75rem 0.875rem;
+}
+.leaflet-control-zoom a {
+  @apply text-foreground;
 }
 
-.navbar .brand {
-  font-weight: 700;
-  margin-right: auto;
+/* Marcador con foto de la mascota: círculo con borde y punta inferior */
+.pet-marker {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  border: 3px solid #fff;
+  background: theme("colors.terracota.200");
+  box-shadow: 0 4px 12px rgb(42 33 28 / 0.3);
+  transition: transform 0.2s ease;
+  transform-origin: bottom center;
+}
+.pet-marker img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+.pet-marker::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top: 8px solid #fff;
+}
+.leaflet-marker-icon:hover .pet-marker,
+.leaflet-marker-icon:focus-visible .pet-marker {
+  transform: scale(1.12);
+}
+.leaflet-marker-icon:focus-visible {
+  outline: none;
+}
+.leaflet-marker-icon:focus-visible .pet-marker {
+  border-color: theme("colors.terracota.600");
 }
 
-.pet-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1rem;
-}
-
-.pet-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 1rem;
+/* Punto de origen de la búsqueda por cercanía */
+.origin-marker {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: theme("colors.pino.600");
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 6px rgb(40 101 91 / 0.25);
 }
